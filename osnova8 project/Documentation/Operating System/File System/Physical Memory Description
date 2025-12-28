@@ -1,0 +1,20 @@
+This document explains Osnova Memory Description Standard
+Written by IJPantic, 22. November, 2025.
+
+Memory Access Layer (MAL):
+	DIrect: CPU can access memory directly as ADD (ADdress Device)
+	InDirectX (where X is number of layers of ADD until CPU can reach memory): CPU can access only thru other ADD
+
+Memory Data Retention (MDR):
+	Long-Term: Data is stored even with power off
+	Short-Term: Data is lost if power is cut
+
+Memory Data Interactability (MDI):
+	Write-Only: Device that controls memory can only read it's contents
+	Read-Only: Device that controls memory can only write content to it
+	Read-Write: Device can both read and write content to memory
+
+Memory description formula:
+	MAL-MDR-MDI (Note that if MAL specification part is left out, it is assumed that it is DI type)
+	Example; ROM: LT-RO, RAM: ST-RW, EEPROM: LT-RW
+

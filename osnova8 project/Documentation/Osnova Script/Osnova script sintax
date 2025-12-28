@@ -1,0 +1,72 @@
+This document explains Osnova Script sintax
+Written by IJPantic, 22. November, 2025.
+Updated by IJPantic, 23. November, 2025.
+
+Osnova Script provides logic for programs, programs written with it are not compiled, but rather scanned on the start of script exection and decoded and executed instruction by instruction on the run
+As said, you can't run script code just by itself. You need an executioner, file system and custom instructions:
+	executioner:
+		program that intereprets and executes Osnova Script code
+	file system:
+		Needed to provide structure and keep track of variables executed by Osnova Script
+		(Note that it is inefficent to create a new variable file for every variable lenght of 1 or few bytes, but rather a list where they will be all accessed via list name and pointer on an exact variable needed)
+	custom instructions:
+		As Osnova Script basic keywords provide just pure logic and structure to a program, you will also need an actual instructions that will do work that the program has to do.
+		These custom instructions need to be made using "work" keyword and they need to be just a machine code as executioner of script will treat them as pure code.
+
+Basic keywords:
+	branch(branch type, condition function, instructions):
+		branch type:
+			goto:
+				"goto" type of branch does not require condition function and it will just execute
+			if:
+				"if" type of branch executes instruction argument only if condition function returns true
+			else if:
+				"else if" type of branch executes instruction argument only if condition returns true and if all branches before it were false
+			else:
+				"else" type of branch does not have a condition and it will execute instruction argument only if all branches before were false
+		condition function:
+			This arguments should contain a function which, when executed, returns a bool (Note that "true" and "false" bools are represented with 1 byte where all bits are equal)
+		instructions:
+			This argument should contain instruction or a tuple of instructions that will execute if condition returns true
+
+	loop(loop type, condition function, instructions):
+		loop type:
+			while:
+				"while" type of loop will repeat execution of instruction argument until the condition function returns false (Note that this is only true if loop's condition function returned true first time)
+			do while:
+				"do while" type of loop will repeat execution of instruction argument until the condition function returns false (Note that it first executes instruction argument and only then checks condition)
+			forever:
+				"forever" type of loop will repeat execution of instruction argument indefinitely and does not have a condition function(Note that this loop can be broken out of only with a branch) 
+		condition function:
+			This arguments should contain a function which, when executed, returns a bool
+		instructions:
+			This argument should contain instruction or a tuple of instrctions that will execute if condition returns true
+
+	function(action type, name, instructions):
+		action type:
+			define:
+				This action will define a new function or change an already existing one (Note that contents of a function will not be executed while defining itself)
+			call:
+				This action will call it's desired function and there should not be an instruction argument as function is not being defined but rather called
+				Note that after executing desired function, workflow will return back from function onto next instruction after function call
+		name:
+			Name should not equal any other function, instruction or variable name and should be only ASCII/ASCII expanded string or character.
+			(Note that any variable inside function also contains name of a function in which it sits. Name of a function sits before the name of a variable and is connected via an underscore character; example: "main_a")
+		instructions:
+			This argument should contain instruction or a tuple of instrctions that will execute when function is called
+
+	work(action type, name, path to instruction machine code, arguments)
+		action type:
+			define:
+				This action will define a new instruction or change a name of an already existant one (Note that contents of an instruction will not be executed while defining itself)
+			call:
+				This action will execute it's desired instruction and there should not be a "path to instruction machine code" argument as instruction is not being defined but rather executed
+				Note that after executing desired instruction, workflow will return back from an custom instruction onto next script instruction after it's execution
+		name:
+			Name should not equal any other function, instruction or variable name and should be only ASCII/ASCII expanded string or character.
+		path to instruction machine code:
+			It should be a name and path of a file that contains machine code for said custom instruction 
+		arguments:
+			This argument should contain argument or a tuple of arguments for a custom instruction if it even requires one
+		(Note that custom instruction file is, or can be, just a regular machine code program that can be run without executioner directly via kernel on cpu)
+

@@ -1,0 +1,62 @@
+This document includes all TTL components used to build Osnova8 CPU and Minimal Osnova8 CPU
+Written by IJPantic, 22. November, 2025.
+Updated by IJPantic, 25. November, 2025.
+
+All types and quantities of each IC used for building Osnova8 CPU:
+	7400: x2
+	7408: x2
+	74138: x5
+	74151: x1
+	74161: x4
+	74181: x2
+	74283: x4
+	74374: x8
+	74541: x9
+	74670: x5
+
+IC type and quantity by each CPU part:
+	ALU (7):
+		74181; 4 bit ALU: x2
+		74374; 8 bit register with 3 state outputs for registers A, B, C, RES: x4
+		74541; 8 bit buffer with 3 state outputs: x1
+
+	IEU - Instruction Executing Unit (8):
+		74161; 4 bit binary counter used as 4 bit register for DIRL, DIRH with clear pin: x2
+		74374: 8 bit register used as instruction register: x1
+		74541; 8 bit buffer with 3 state outputs used for DIR: x1
+		74138: 3 to 8 line binary decoder with enable pins used for decoding 16 opcodes, 8 arguments, sensing jmp opcode: x4
+
+	PFL - Pointer File Low (7):
+		74283; 4 bit binary adders used to increment pointer: x2
+		74670; 4 bit, 4 words register file used to store pointers: x2
+		74374; 8 bit register with 3 state outputs used to control propagation of values during counting: x1
+		74541; 8 bit buffer with 3 state outputs, one used for reading value from the bus and other for releasing value to the bus: x2
+
+	PFH - Pointer File High (7):
+		74283; 4 bit binary adders used to increment pointer: x2
+		74670; 4 bit, 4 words register file used to store pointers: x2
+		74374; 8 bit register with 3 state outputs used to control propagation of values during counting: x1
+		74541; 8 bit buffer with 3 state outputs, one used for reading value from the bus and other for releasing value to the bus: x2
+
+	CU - Control Unit (3):
+		74161; 4 bit binary counter with clear pin used for counting steps of instruction execution cycle: x1
+		74138; 3 to 8 line binary decoder used for decoding counted value of instruction execution cycle: x1
+		7408; 4, 2 input and gates used as logic or gate for logic which is used for activitng arg signal, jmp signal, addr (address device read) signal: x1
+
+	IH - Interrupt Handler (4):
+		7408; 4, 2 input and gates used as logic or gate for logic which joins equal signals, signals for pc_ctrl_bridge, 2 for controling stack writing for PF: x1
+		74161; 4 bit binary counter used as set reset latch for setting interrupt: x1
+		7400; 4, 2 input nand gates used as logic nor & not gates for logic which joins interrupt signals, inverts pos_cnd, opc_jmp_sense, act_arg, 2 for controling incrementation of a PF pointer: x2
+
+	JC - Jump Control (1):
+		74151; 8 line multiplexer used as selector for choosing conditions and when to jump: x1
+
+	SCTPS - SeCTorPointerSelector (5):
+		74670; 4 bit, 4 words register file used to store SCT pointers: x1
+		74374; 8 bit register with 3 state outputs used for PS: x1
+		74541; 8 bit buffer with 3 state outputs used for releasing value of SeCTor and Pointer Selector Into 1 byte, 2 are used to control will PF be slected by PS or IH: x3
+
+Osnova8 CPU contains total of 42 TTL IC's while Minimal Osnova8 CPU (Which does not have PFH) contains only 35 TTL IC's
+At the time of making this document all of them could be found on "www.jameco.com"
+"Logisim-evolution v3.9.0" was used for simulating IC's to a good enough degree
+

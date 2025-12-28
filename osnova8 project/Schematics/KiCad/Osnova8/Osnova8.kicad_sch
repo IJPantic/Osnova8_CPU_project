@@ -1,0 +1,312 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "456db46a-756c-4960-9144-42cc59fc5d3d")
+	(paper "A4")
+	(title_block
+		(title "Osnova 8 CPU")
+		(date "2025-12-03")
+	)
+	(lib_symbols)
+	(sheet
+		(at 80.01 20.32)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "074d0cd8-8282-4273-a2dd-ab2979668d15")
+		(property "Sheetname" "IEU"
+			(at 80.01 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnova8_IEU.kicad_sch"
+			(at 80.01 39.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 100.33)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "21df4de7-ad86-4ac8-a589-8c65af7e3ef5")
+		(property "Sheetname" "COMLOG"
+			(at 30.48 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnova8_COMLOG.kicad_sch"
+			(at 30.48 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 80.01 46.99)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4b8ac68d-2634-4bd6-b804-cf5f272996ea")
+		(property "Sheetname" "PFL"
+			(at 80.01 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnova8_PFL.kicad_sch"
+			(at 80.01 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 80.01 73.66)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8200b1e9-4883-4041-ac68-c214e293dbd2")
+		(property "Sheetname" "CU"
+			(at 80.01 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnova8_CU.kicad_sch"
+			(at 80.01 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 20.32)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a561741d-88de-4e8c-9cf7-5fda436f1d31")
+		(property "Sheetname" "ALU"
+			(at 30.48 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnovca_ALU.kicad_sch"
+			(at 30.48 39.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 73.66)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d85546ea-8334-43c2-a7f1-19f62f8c1a06")
+		(property "Sheetname" "PFH"
+			(at 30.48 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnova8_PFH.kicad_sch"
+			(at 30.48 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 46.99)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "da42d14d-796d-402f-90a5-af19479f9d0f")
+		(property "Sheetname" "SCTPS"
+			(at 30.48 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Osnova8_SCTPS.kicad_sch"
+			(at 30.48 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Osnova8"
+				(path "/456db46a-756c-4960-9144-42cc59fc5d3d"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

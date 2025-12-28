@@ -1,0 +1,85 @@
+This document explains Osnova Assembly sintax
+Written by IJPantic, 22. November, 2025.
+Updated by IJPantic, 23. November, 2025.
+Updated by IJPantic, 4. December, 2025.
+
+Registers:
+	RA (Acts as number A for ALU)
+	RB (Acts as number B for ALU)
+	RC
+	APL0 (Contained inside PFL. Acts as PCL, btw PFL stands for Pointer File Low)
+	APL1 (Contained inside PFL. Acts as APL)
+	APL2 (Contained inside PFL. Acts as PCIL, btw PCI stands for Program Couter Interrupt Low)
+	APL3 (Contained inside PFL. Acts as APIL, btw APIL stands for Address Pointer Interrupt Low)
+	APL (Contained inside PFL. Note that the number of exact APL here is defined by PS)
+	APH0 (Contained inside PFH. Acts as PCH)
+	APH1 (Contained inside PFH. Acts as APH)
+	APH2 (Contained inside PFH. Acts as PCIH)
+	APH3 (Contained inside PFH. Acts as APIH)
+	APH (Contained inside PFH. Note that number the of exact APH here is defined by PS)
+	SCT0 (Acts as PC sector. Note that it is 4 bit value on high end of byte and when read, outputs together)
+	SCT1 (Acts as AP sector. Note that it is 4 bit value on high end of byte and when read, outputs together)
+	SCT2 (Acts as PCI sector. Note that it is 4 bit value on high end of byte and when read, outputs together)
+	SCT3 (Acts as API sector. Note that it is 4 bit value on high end of byte and when read, outputs together)
+	SCT (Note that the number of exact SCT here is defined by PS)
+	PS (Pointer Selector. Acts as AP & SCT selector. Note that it is 4 bit value and that it selects pointers as; bit 0: write pointer address 0, bit 1: write pointer address 1, bit 2: read pointer address 0, bit 3: read pointer address 1)
+	RERS (REServe Register. Note that it should only be used by task which is running in interrupt mode for it's use in process of "CPU snapshot")
+	ADD (Note that the value of ADD will depend on last used address and sector by other instructions)
+
+ALU operations sintax:
+	CALC Operation, Result, Number A, Number B (Note that you should not save result of operation neither in RA nor RB as they are used to determine result)
+	Common operations:
+		ALU's S argument	ALU's M argument	ALU's CIN argument	Operation synonyme	Operation
+		0	-	-	-	-	1	-	-	-	-	X	-	-	-	-	NOTA	-	-	-	!A
+		1	-	-	-	-	1	-	-	-	-	X	-	-	-	-	NOR	-	-	-	-	!(A||B)
+		2	-	-	-	-	1	-	-	-	-	X	-	-	-	-	AND!A	-	-	-	(!A)&B
+		4	-	-	-	-	1	-	-	-	-	X	-	-	-	-	NAND-	-	-	-	!(A&B)
+		5	-	-	-	-	1	-	-	-	-	X	-	-	-	-	NOTB-	-	-	-	!B
+		6	-	-	-	-	1	-	-	-	-	X	-	-	-	-	XOR	-	-	-	-	A⊕B
+		7	-	-	-	-	1	-	-	-	-	X	-	-	-	-	AND!B	-	-	-	A&(!B)
+		8	-	-	-	-	1	-	-	-	-	X	-	-	-	-	OR!A-	-	-	-	(!A)||B
+		9	-	-	-	-	1	-	-	-	-	X	-	-	-	-	XNOR-	-	-	-	!(A⊕B)
+		B	-	-	-	-	1	-	-	-	-	X	-	-	-	-	AND	-	-	-	-	A&B				
+		D	-	-	-	-	1	-	-	-	-	X	-	-	-	-	OR!B-	-	-	-	A||(!B)
+		E	-	-	-	-	1	-	-	-	-	X	-	-	-	-	OR	-	-	-	-	A||B
+		0	-	-	-	-	0	-	-	-	-	0	-	-	-	-	INCA-	-	-	-	A+1
+		1	-	-	-	-	0	-	-	-	-	0	-	-	-	-	ORINC	-	-	-	(A||B)+1
+		6	-	-	-	-	0	-	-	-	-	0	-	-	-	-	SUB	-	-	-	-	A-B
+		9	-	-	-	-	0	-	-	-	-	0	-	-	-	-	ADDINC	-	-	-	A+B+1
+		C	-	-	-	-	0	-	-	-	-	0	-	-	-	-	INC2A	-	-	-	A+A+1
+		6	-	-	-	-	0	-	-	-	-	1	-	-	-	-	SUBDEC	-	-	-	A-B-1
+		9	-	-	-	-	0	-	-	-	-	1	-	-	-	-	ADD	-	-	-	-	A+B
+		C	-	-	-	-	0	-	-	-	-	1	-	-	-	-	2A	-	-	-	-	A+A
+		B	-	-	-	-	0	-	-	-	-	1	-	-	-	-	ANDDEC	-	-	-	(A&B)-1
+		F	-	-	-	-	0	-	-	-	-	1	-	-	-	-	DECA-	-	-	-	A-1
+	All operations:
+		look at 74181 ALU operations (Note that byte that controls operation in osnova8 CPU goes as; bit 0: S0, bit 1: s1, bit 2: s2, bit 3: s3, bit 4: CIN, bit 5: M, bit 6 & 7: x)
+
+Number base indicator:
+	0x[HEXADECIMAL VALUE): hexadecimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+	0b[BINARY VALUE]: binary (0, 1)
+	[Decimal value]: decimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+Storing on addreses in ADD:
+	STORE Address, Value
+	Note that sector is not defined by this instruction
+
+Moving data:
+	MOV To, From (Note that if you are, for example, using address as argument for "From", it should not change any registers value that chooses that same address)
+
+Using lables:
+	label as program address pointer:
+		If jumped to a position of the label it will jump to the first instruction after the label (Note that the number of lines in assembly does not have to equal the number of CPU instructions in reality)
+	label as value:
+		Good idea for values that are representing somethins, true and false for example
+	label as another name for register:
+		It is not recommended to avoid confusion, exceptions are AP's and SCT's, for them it is not a bad idea to name them after what they act as
+		(Note that label should not have a name that is already in use by register or instruction)
+	label as address:
+		Can be used as a variables for program
+	(Note that label is defined as; example: PORT_15 = 0xf)
+
+Jumping and conditions:
+	JMP Pointer to, Pointer from, Condition, Address
+	(Note that all arguments are optional, if not specified, it will load some AP into some AP that is defined by PS and it will jump without condition)
+
