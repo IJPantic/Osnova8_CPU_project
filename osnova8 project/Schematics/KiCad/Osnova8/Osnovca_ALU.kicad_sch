@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Osnova8 CPU")
-		(date "2025-12-03")
+		(date "2026-01-13")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "74xx:74LS181"
@@ -2560,16 +2561,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 172.72) (xy 99.06 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fcce9a3-5901-4f15-afac-a6452b63ebf0")
-	)
-	(wire
-		(pts
 			(xy 168.91 107.95) (xy 125.73 107.95)
 		)
 		(stroke
@@ -3120,16 +3111,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 170.18) (xy 99.06 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "920fddaf-b56d-42bb-9961-dd36a1de9522")
-	)
-	(wire
-		(pts
 			(xy 115.57 105.41) (xy 99.06 105.41)
 		)
 		(stroke
@@ -3490,6 +3471,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 172.72) (xy 99.06 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfb3bfa9-4e20-43cd-bd56-188656675dd9")
+	)
+	(wire
+		(pts
 			(xy 135.89 39.37) (xy 168.91 39.37)
 		)
 		(stroke
@@ -3537,6 +3528,16 @@
 			(type default)
 		)
 		(uuid "d4fd5ce7-d763-4625-8877-15aa2cf033d1")
+	)
+	(wire
+		(pts
+			(xy 96.52 170.18) (xy 99.06 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d891b4-931c-4d3f-9a16-20d977eb89ad")
 	)
 	(wire
 		(pts
@@ -3868,7 +3869,7 @@
 		)
 		(uuid "fe2b5c93-74bb-4a34-aafa-1c3ce83ff891")
 	)
-	(global_label "DIR1"
+	(global_label "DVR1"
 		(shape bidirectional)
 		(at 146.05 123.19 180)
 		(fields_autoplaced yes)
@@ -3880,7 +3881,7 @@
 		)
 		(uuid "008242b5-621e-4491-a366-60dfeb1b09c2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.2897 123.19 0)
+			(at 137.1154 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4088,7 +4089,7 @@
 			)
 		)
 	)
-	(global_label "DIR4"
+	(global_label "DVR4"
 		(shape bidirectional)
 		(at 166.37 64.77 180)
 		(fields_autoplaced yes)
@@ -4100,7 +4101,7 @@
 		)
 		(uuid "26271b5b-5140-45cf-aacd-0072d8433ca3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.6097 64.77 0)
+			(at 157.4354 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,9 +4111,9 @@
 			)
 		)
 	)
-	(global_label "ARG_RES"
+	(global_label "ARG_RESR"
 		(shape bidirectional)
-		(at 96.8386 172.72 180)
+		(at 96.52 172.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4122,7 +4123,7 @@
 		)
 		(uuid "26e2e60c-5d09-49f5-ae14-1bd8fac34dd8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.9819 172.72 0)
+			(at 82.9288 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,7 +4529,7 @@
 			)
 		)
 	)
-	(global_label "DIR0"
+	(global_label "DVR0"
 		(shape bidirectional)
 		(at 146.05 120.65 180)
 		(fields_autoplaced yes)
@@ -4540,7 +4541,7 @@
 		)
 		(uuid "5887b142-ba38-4153-be18-3204b4f19251")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.2897 120.65 0)
+			(at 137.1154 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,9 +4617,9 @@
 			)
 		)
 	)
-	(global_label "OPC_RES"
+	(global_label "OPC_RESR"
 		(shape bidirectional)
-		(at 96.8386 170.18 180)
+		(at 96.52 170.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4628,7 +4629,7 @@
 		)
 		(uuid "790274a1-900d-4829-a508-d153b2845b51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.7884 170.18 0)
+			(at 82.6869 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4660,7 +4661,7 @@
 			)
 		)
 	)
-	(global_label "DIR2"
+	(global_label "DVR2"
 		(shape bidirectional)
 		(at 146.05 125.73 180)
 		(fields_autoplaced yes)
@@ -4672,7 +4673,7 @@
 		)
 		(uuid "83581695-4bab-44fb-9e2d-d50945887e5e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.2897 125.73 0)
+			(at 137.1154 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5210,7 +5211,7 @@
 			)
 		)
 	)
-	(global_label "DIR3"
+	(global_label "DVR3"
 		(shape bidirectional)
 		(at 146.05 128.27 180)
 		(fields_autoplaced yes)
@@ -5222,7 +5223,7 @@
 		)
 		(uuid "cc1fc651-7ac6-4379-899e-e3a47264f7b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.2897 128.27 0)
+			(at 137.1154 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5232,7 +5233,7 @@
 			)
 		)
 	)
-	(global_label "DIR5"
+	(global_label "DVR5"
 		(shape bidirectional)
 		(at 146.05 133.35 180)
 		(fields_autoplaced yes)
@@ -5244,7 +5245,7 @@
 		)
 		(uuid "cc9be222-dece-4a14-8924-8df8f06ae125")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.2897 133.35 0)
+			(at 137.1154 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)

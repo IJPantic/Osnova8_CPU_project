@@ -67,7 +67,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "21df4de7-ad86-4ac8-a589-8c65af7e3ef5")
-		(property "Sheetname" "COMLOG"
+		(property "Sheetname" "CMBL"
 			(at 30.48 99.6184 0)
 			(effects
 				(font
@@ -277,7 +277,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "da42d14d-796d-402f-90a5-af19479f9d0f")
-		(property "Sheetname" "SCTPS"
+		(property "Sheetname" "SFPS"
 			(at 30.48 46.2784 0)
 			(effects
 				(font

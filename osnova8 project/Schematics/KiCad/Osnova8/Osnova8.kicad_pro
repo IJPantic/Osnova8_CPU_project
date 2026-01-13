@@ -620,7 +620,7 @@
     ],
     [
       "da42d14d-796d-402f-90a5-af19479f9d0f",
-      "SCTPS"
+      "SFPS"
     ],
     [
       "074d0cd8-8282-4273-a2dd-ab2979668d15",
@@ -640,7 +640,19 @@
     ],
     [
       "21df4de7-ad86-4ac8-a589-8c65af7e3ef5",
-      "COMLOG"
+      "CMBL"
+    ],
+    [
+      "1b2a0072-0db3-4779-9f5a-7c788f96d5c6",
+      "PF_EXE_CMBL"
+    ],
+    [
+      "ff926656-5bab-40d5-b107-6c2e24a6d3ff",
+      "PF_PREP_CMBL"
+    ],
+    [
+      "e08b0240-7623-4002-8294-4edd0584f6a4",
+      "MERGE_CMBL"
     ]
   ],
   "text_variables": {}
