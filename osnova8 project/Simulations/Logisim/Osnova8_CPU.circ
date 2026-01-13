@@ -1,0 +1,3758 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.9.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="west"/>
+    </tool>
+    <tool name="Power">
+      <a name="facing" val="west"/>
+    </tool>
+    <tool name="Ground">
+      <a name="facing" val="west"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1">
+    <tool name="NOT Gate">
+      <a name="size" val="20"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="Counter">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <lib desc="file#Osnova8_IC_lib.circ" name="12"/>
+  <main name="CPU"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="CPU">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="CPU"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1420,1220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,1240)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,1260)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PWA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,1280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PWA1"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,680)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,700)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PWA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(1420,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PWA1"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(190,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn4"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn5"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn6"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn7"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2460,1180)" name="Tunnel">
+      <a name="label" val="Arg0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2460,1200)" name="Tunnel">
+      <a name="label" val="Arg1"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2460,1220)" name="Tunnel">
+      <a name="label" val="Arg2"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2460,1240)" name="Tunnel">
+      <a name="label" val="Arg3"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2770,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,460)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,500)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut4"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,540)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Dout5"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,560)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut6"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2770,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut7"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2840,920)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CndX"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2850,1000)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Odd"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,1040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Arg0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Arg1"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Arg2"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,1140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="IntX"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2850,1160)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EqL"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,1180)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EqH"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,900)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Equ"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,940)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="IntM"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,960)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Carry"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(2850,980)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Neg"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(3150,920)" name="Tunnel">
+      <a name="label" val="Int"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(3150,940)" name="Tunnel">
+      <a name="label" val="Equ"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(500,620)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(500,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(500,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PWA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(500,680)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PWA1"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(500,840)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Int"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,1220)" name="Tunnel">
+      <a name="label" val="EqL"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,1240)" name="Tunnel">
+      <a name="label" val="EqH"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,1260)" name="Tunnel">
+      <a name="label" val="Odd"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,1280)" name="Tunnel">
+      <a name="label" val="Neg"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,1300)" name="Tunnel">
+      <a name="label" val="Carry"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,620)" name="Tunnel">
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,640)" name="Tunnel">
+      <a name="label" val="PRA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,660)" name="Tunnel">
+      <a name="label" val="PWA0"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,680)" name="Tunnel">
+      <a name="label" val="PWA1"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(800,720)" name="Tunnel">
+      <a name="label" val="IntM"/>
+      <a name="labelfont" val="SansSerif plain 10"/>
+    </comp>
+    <comp loc="(1700,430)" name="PART_PF"/>
+    <comp loc="(1700,990)" name="PART_PF"/>
+    <comp loc="(2440,430)" name="PART_IEU"/>
+    <comp loc="(3130,540)" name="PART_CU"/>
+    <comp loc="(3130,890)" name="PART_CMBL"/>
+    <comp loc="(780,1030)" name="PART_ALU"/>
+    <comp loc="(780,430)" name="PART_SCTPS"/>
+    <wire from="(1000,1120)" to="(1000,1600)"/>
+    <wire from="(1000,1600)" to="(1920,1600)"/>
+    <wire from="(1000,500)" to="(1000,1120)"/>
+    <wire from="(1020,1140)" to="(1020,1580)"/>
+    <wire from="(1020,1580)" to="(1940,1580)"/>
+    <wire from="(1020,480)" to="(1020,1140)"/>
+    <wire from="(1040,1160)" to="(1040,1560)"/>
+    <wire from="(1040,1560)" to="(1960,1560)"/>
+    <wire from="(1040,460)" to="(1040,1160)"/>
+    <wire from="(1060,1180)" to="(1060,1540)"/>
+    <wire from="(1060,1540)" to="(1980,1540)"/>
+    <wire from="(1060,440)" to="(1060,1180)"/>
+    <wire from="(1130,1140)" to="(1440,1140)"/>
+    <wire from="(1130,390)" to="(1130,580)"/>
+    <wire from="(1130,390)" to="(2020,390)"/>
+    <wire from="(1130,580)" to="(1130,1140)"/>
+    <wire from="(1130,580)" to="(1440,580)"/>
+    <wire from="(1150,1120)" to="(1440,1120)"/>
+    <wire from="(1150,370)" to="(1150,560)"/>
+    <wire from="(1150,370)" to="(2040,370)"/>
+    <wire from="(1150,560)" to="(1150,1120)"/>
+    <wire from="(1150,560)" to="(1440,560)"/>
+    <wire from="(1170,1100)" to="(1440,1100)"/>
+    <wire from="(1170,350)" to="(1170,540)"/>
+    <wire from="(1170,350)" to="(2060,350)"/>
+    <wire from="(1170,540)" to="(1170,1100)"/>
+    <wire from="(1170,540)" to="(1440,540)"/>
+    <wire from="(1190,1080)" to="(1440,1080)"/>
+    <wire from="(1190,330)" to="(1190,520)"/>
+    <wire from="(1190,330)" to="(2080,330)"/>
+    <wire from="(1190,520)" to="(1190,1080)"/>
+    <wire from="(1190,520)" to="(1440,520)"/>
+    <wire from="(1210,1060)" to="(1440,1060)"/>
+    <wire from="(1210,310)" to="(1210,500)"/>
+    <wire from="(1210,310)" to="(2100,310)"/>
+    <wire from="(1210,500)" to="(1210,1060)"/>
+    <wire from="(1210,500)" to="(1440,500)"/>
+    <wire from="(1230,1040)" to="(1440,1040)"/>
+    <wire from="(1230,290)" to="(1230,480)"/>
+    <wire from="(1230,290)" to="(2120,290)"/>
+    <wire from="(1230,480)" to="(1230,1040)"/>
+    <wire from="(1230,480)" to="(1440,480)"/>
+    <wire from="(1250,1020)" to="(1440,1020)"/>
+    <wire from="(1250,270)" to="(1250,460)"/>
+    <wire from="(1250,270)" to="(2140,270)"/>
+    <wire from="(1250,460)" to="(1250,1020)"/>
+    <wire from="(1250,460)" to="(1440,460)"/>
+    <wire from="(1270,1000)" to="(1440,1000)"/>
+    <wire from="(1270,250)" to="(1270,440)"/>
+    <wire from="(1270,250)" to="(2160,250)"/>
+    <wire from="(1270,440)" to="(1270,1000)"/>
+    <wire from="(1270,440)" to="(1440,440)"/>
+    <wire from="(1420,1180)" to="(1440,1180)"/>
+    <wire from="(1420,1220)" to="(1440,1220)"/>
+    <wire from="(1420,1240)" to="(1440,1240)"/>
+    <wire from="(1420,1260)" to="(1440,1260)"/>
+    <wire from="(1420,1280)" to="(1440,1280)"/>
+    <wire from="(1420,660)" to="(1440,660)"/>
+    <wire from="(1420,680)" to="(1440,680)"/>
+    <wire from="(1420,700)" to="(1440,700)"/>
+    <wire from="(1420,720)" to="(1440,720)"/>
+    <wire from="(1420,970)" to="(1420,1180)"/>
+    <wire from="(1420,970)" to="(1720,970)"/>
+    <wire from="(1700,1000)" to="(1840,1000)"/>
+    <wire from="(1700,1020)" to="(1860,1020)"/>
+    <wire from="(1700,1040)" to="(1880,1040)"/>
+    <wire from="(1700,1060)" to="(1900,1060)"/>
+    <wire from="(1700,1080)" to="(1920,1080)"/>
+    <wire from="(1700,1100)" to="(1940,1100)"/>
+    <wire from="(1700,1120)" to="(1960,1120)"/>
+    <wire from="(1700,1140)" to="(1980,1140)"/>
+    <wire from="(1700,440)" to="(1980,440)"/>
+    <wire from="(1700,460)" to="(1960,460)"/>
+    <wire from="(1700,480)" to="(1940,480)"/>
+    <wire from="(1700,500)" to="(1920,500)"/>
+    <wire from="(1700,520)" to="(1900,520)"/>
+    <wire from="(1700,540)" to="(1880,540)"/>
+    <wire from="(1700,560)" to="(1860,560)"/>
+    <wire from="(1700,580)" to="(1840,580)"/>
+    <wire from="(1700,620)" to="(1720,620)"/>
+    <wire from="(1720,620)" to="(1720,970)"/>
+    <wire from="(1840,1000)" to="(1840,1680)"/>
+    <wire from="(1840,1680)" to="(2750,1680)"/>
+    <wire from="(1840,580)" to="(1840,1000)"/>
+    <wire from="(1860,1020)" to="(1860,1660)"/>
+    <wire from="(1860,1660)" to="(2730,1660)"/>
+    <wire from="(1860,560)" to="(1860,1020)"/>
+    <wire from="(1880,1040)" to="(1880,1640)"/>
+    <wire from="(1880,1640)" to="(2710,1640)"/>
+    <wire from="(1880,540)" to="(1880,1040)"/>
+    <wire from="(190,250)" to="(350,250)"/>
+    <wire from="(190,270)" to="(330,270)"/>
+    <wire from="(190,290)" to="(310,290)"/>
+    <wire from="(190,310)" to="(290,310)"/>
+    <wire from="(190,330)" to="(270,330)"/>
+    <wire from="(190,350)" to="(250,350)"/>
+    <wire from="(190,370)" to="(230,370)"/>
+    <wire from="(190,390)" to="(210,390)"/>
+    <wire from="(1900,1060)" to="(1900,1620)"/>
+    <wire from="(1900,1620)" to="(2690,1620)"/>
+    <wire from="(1900,520)" to="(1900,1060)"/>
+    <wire from="(1920,1080)" to="(1920,1600)"/>
+    <wire from="(1920,1600)" to="(2670,1600)"/>
+    <wire from="(1920,500)" to="(1920,1080)"/>
+    <wire from="(1940,1100)" to="(1940,1580)"/>
+    <wire from="(1940,1580)" to="(2650,1580)"/>
+    <wire from="(1940,480)" to="(1940,1100)"/>
+    <wire from="(1960,1120)" to="(1960,1560)"/>
+    <wire from="(1960,1560)" to="(2630,1560)"/>
+    <wire from="(1960,460)" to="(1960,1120)"/>
+    <wire from="(1980,1140)" to="(1980,1540)"/>
+    <wire from="(1980,1540)" to="(2610,1540)"/>
+    <wire from="(1980,440)" to="(1980,1140)"/>
+    <wire from="(2020,390)" to="(2020,580)"/>
+    <wire from="(2020,580)" to="(2180,580)"/>
+    <wire from="(2040,370)" to="(2040,560)"/>
+    <wire from="(2040,560)" to="(2180,560)"/>
+    <wire from="(2060,350)" to="(2060,540)"/>
+    <wire from="(2060,540)" to="(2180,540)"/>
+    <wire from="(2080,330)" to="(2080,520)"/>
+    <wire from="(2080,520)" to="(2180,520)"/>
+    <wire from="(210,1180)" to="(520,1180)"/>
+    <wire from="(210,390)" to="(1130,390)"/>
+    <wire from="(210,390)" to="(210,580)"/>
+    <wire from="(210,580)" to="(210,1180)"/>
+    <wire from="(210,580)" to="(520,580)"/>
+    <wire from="(2100,310)" to="(2100,500)"/>
+    <wire from="(2100,500)" to="(2180,500)"/>
+    <wire from="(2120,290)" to="(2120,480)"/>
+    <wire from="(2120,480)" to="(2180,480)"/>
+    <wire from="(2140,270)" to="(2140,460)"/>
+    <wire from="(2140,460)" to="(2180,460)"/>
+    <wire from="(2160,250)" to="(2160,440)"/>
+    <wire from="(2160,440)" to="(2180,440)"/>
+    <wire from="(230,1160)" to="(520,1160)"/>
+    <wire from="(230,370)" to="(1150,370)"/>
+    <wire from="(230,370)" to="(230,560)"/>
+    <wire from="(230,560)" to="(230,1160)"/>
+    <wire from="(230,560)" to="(520,560)"/>
+    <wire from="(2440,1180)" to="(2460,1180)"/>
+    <wire from="(2440,1200)" to="(2460,1200)"/>
+    <wire from="(2440,1220)" to="(2460,1220)"/>
+    <wire from="(2440,1240)" to="(2460,1240)"/>
+    <wire from="(2440,440)" to="(2750,440)"/>
+    <wire from="(2440,460)" to="(2730,460)"/>
+    <wire from="(2440,480)" to="(2710,480)"/>
+    <wire from="(2440,500)" to="(2690,500)"/>
+    <wire from="(2440,520)" to="(2670,520)"/>
+    <wire from="(2440,540)" to="(2650,540)"/>
+    <wire from="(2440,560)" to="(2630,560)"/>
+    <wire from="(2440,580)" to="(2610,580)"/>
+    <wire from="(250,1140)" to="(520,1140)"/>
+    <wire from="(250,350)" to="(1170,350)"/>
+    <wire from="(250,350)" to="(250,540)"/>
+    <wire from="(250,540)" to="(250,1140)"/>
+    <wire from="(250,540)" to="(520,540)"/>
+    <wire from="(2610,580)" to="(2610,1540)"/>
+    <wire from="(2610,580)" to="(2770,580)"/>
+    <wire from="(2630,560)" to="(2630,1560)"/>
+    <wire from="(2630,560)" to="(2770,560)"/>
+    <wire from="(2650,540)" to="(2650,1580)"/>
+    <wire from="(2650,540)" to="(2770,540)"/>
+    <wire from="(2670,520)" to="(2670,1600)"/>
+    <wire from="(2670,520)" to="(2770,520)"/>
+    <wire from="(2690,500)" to="(2690,1620)"/>
+    <wire from="(2690,500)" to="(2770,500)"/>
+    <wire from="(270,1120)" to="(520,1120)"/>
+    <wire from="(270,330)" to="(1190,330)"/>
+    <wire from="(270,330)" to="(270,520)"/>
+    <wire from="(270,520)" to="(270,1120)"/>
+    <wire from="(270,520)" to="(520,520)"/>
+    <wire from="(2710,480)" to="(2710,1640)"/>
+    <wire from="(2710,480)" to="(2770,480)"/>
+    <wire from="(2730,460)" to="(2730,1660)"/>
+    <wire from="(2730,460)" to="(2770,460)"/>
+    <wire from="(2750,440)" to="(2750,1680)"/>
+    <wire from="(2750,440)" to="(2770,440)"/>
+    <wire from="(2840,920)" to="(2870,920)"/>
+    <wire from="(2850,1000)" to="(2870,1000)"/>
+    <wire from="(2850,1040)" to="(2870,1040)"/>
+    <wire from="(2850,1060)" to="(2870,1060)"/>
+    <wire from="(2850,1080)" to="(2870,1080)"/>
+    <wire from="(2850,1140)" to="(2870,1140)"/>
+    <wire from="(2850,1160)" to="(2870,1160)"/>
+    <wire from="(2850,1180)" to="(2870,1180)"/>
+    <wire from="(2850,900)" to="(2870,900)"/>
+    <wire from="(2850,940)" to="(2870,940)"/>
+    <wire from="(2850,960)" to="(2870,960)"/>
+    <wire from="(2850,980)" to="(2870,980)"/>
+    <wire from="(290,1100)" to="(520,1100)"/>
+    <wire from="(290,310)" to="(1210,310)"/>
+    <wire from="(290,310)" to="(290,500)"/>
+    <wire from="(290,500)" to="(290,1100)"/>
+    <wire from="(290,500)" to="(520,500)"/>
+    <wire from="(310,1080)" to="(520,1080)"/>
+    <wire from="(310,290)" to="(1230,290)"/>
+    <wire from="(310,290)" to="(310,480)"/>
+    <wire from="(310,480)" to="(310,1080)"/>
+    <wire from="(310,480)" to="(520,480)"/>
+    <wire from="(3130,920)" to="(3150,920)"/>
+    <wire from="(3130,940)" to="(3150,940)"/>
+    <wire from="(330,1060)" to="(520,1060)"/>
+    <wire from="(330,270)" to="(1250,270)"/>
+    <wire from="(330,270)" to="(330,460)"/>
+    <wire from="(330,460)" to="(330,1060)"/>
+    <wire from="(330,460)" to="(520,460)"/>
+    <wire from="(350,1040)" to="(520,1040)"/>
+    <wire from="(350,250)" to="(1270,250)"/>
+    <wire from="(350,250)" to="(350,440)"/>
+    <wire from="(350,440)" to="(350,1040)"/>
+    <wire from="(350,440)" to="(520,440)"/>
+    <wire from="(500,620)" to="(520,620)"/>
+    <wire from="(500,640)" to="(520,640)"/>
+    <wire from="(500,660)" to="(520,660)"/>
+    <wire from="(500,680)" to="(520,680)"/>
+    <wire from="(500,840)" to="(520,840)"/>
+    <wire from="(590,500)" to="(590,520)"/>
+    <wire from="(780,1040)" to="(920,1040)"/>
+    <wire from="(780,1060)" to="(940,1060)"/>
+    <wire from="(780,1080)" to="(960,1080)"/>
+    <wire from="(780,1100)" to="(980,1100)"/>
+    <wire from="(780,1120)" to="(1000,1120)"/>
+    <wire from="(780,1140)" to="(1020,1140)"/>
+    <wire from="(780,1160)" to="(1040,1160)"/>
+    <wire from="(780,1180)" to="(1060,1180)"/>
+    <wire from="(780,1220)" to="(800,1220)"/>
+    <wire from="(780,1240)" to="(800,1240)"/>
+    <wire from="(780,1260)" to="(800,1260)"/>
+    <wire from="(780,1280)" to="(800,1280)"/>
+    <wire from="(780,1300)" to="(800,1300)"/>
+    <wire from="(780,440)" to="(1060,440)"/>
+    <wire from="(780,460)" to="(1040,460)"/>
+    <wire from="(780,480)" to="(1020,480)"/>
+    <wire from="(780,500)" to="(1000,500)"/>
+    <wire from="(780,520)" to="(980,520)"/>
+    <wire from="(780,540)" to="(960,540)"/>
+    <wire from="(780,560)" to="(940,560)"/>
+    <wire from="(780,580)" to="(920,580)"/>
+    <wire from="(780,620)" to="(800,620)"/>
+    <wire from="(780,640)" to="(800,640)"/>
+    <wire from="(780,660)" to="(800,660)"/>
+    <wire from="(780,680)" to="(800,680)"/>
+    <wire from="(780,720)" to="(800,720)"/>
+    <wire from="(920,1040)" to="(920,1680)"/>
+    <wire from="(920,1680)" to="(1840,1680)"/>
+    <wire from="(920,580)" to="(920,1040)"/>
+    <wire from="(940,1060)" to="(940,1660)"/>
+    <wire from="(940,1660)" to="(1860,1660)"/>
+    <wire from="(940,560)" to="(940,1060)"/>
+    <wire from="(960,1080)" to="(960,1640)"/>
+    <wire from="(960,1640)" to="(1880,1640)"/>
+    <wire from="(960,540)" to="(960,1080)"/>
+    <wire from="(980,1100)" to="(980,1620)"/>
+    <wire from="(980,1620)" to="(1900,1620)"/>
+    <wire from="(980,520)" to="(980,1100)"/>
+  </circuit>
+  <circuit name="PART_ALU">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="PART_ALU"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#fff599" height="480" stroke="#000000" width="220" x="50" y="50"/>
+      <polyline fill="none" points="30,80 49,80" stroke="#000000"/>
+      <polyline fill="none" points="30,60 49,60" stroke="#000000"/>
+      <polyline fill="none" points="30,120 49,120" stroke="#000000"/>
+      <polyline fill="none" points="30,100 49,100" stroke="#000000"/>
+      <polyline fill="none" points="30,160 49,160" stroke="#000000"/>
+      <polyline fill="none" points="30,180 49,180" stroke="#000000"/>
+      <polyline fill="none" points="30,200 49,200" stroke="#000000"/>
+      <polyline fill="none" points="30,140 49,140" stroke="#000000"/>
+      <polyline fill="none" points="30,380 49,380" stroke="#000000"/>
+      <polyline fill="none" points="30,320 49,320" stroke="#000000"/>
+      <polyline fill="none" points="30,260 49,260" stroke="#000000"/>
+      <polyline fill="none" points="30,280 49,280" stroke="#000000"/>
+      <polyline fill="none" points="30,240 49,240" stroke="#000000"/>
+      <polyline fill="none" points="30,460 49,460" stroke="#000000"/>
+      <polyline fill="none" points="30,400 49,400" stroke="#000000"/>
+      <polyline fill="none" points="30,480 49,480" stroke="#000000"/>
+      <polyline fill="none" points="30,440 49,440" stroke="#000000"/>
+      <polyline fill="none" points="30,420 49,420" stroke="#000000"/>
+      <polyline fill="none" points="271,160 290,160" stroke="#000000"/>
+      <polyline fill="none" points="271,120 290,120" stroke="#000000"/>
+      <polyline fill="none" points="271,60 290,60" stroke="#000000"/>
+      <polyline fill="none" points="271,180 290,180" stroke="#000000"/>
+      <polyline fill="none" points="271,200 290,200" stroke="#000000"/>
+      <polyline fill="none" points="271,140 290,140" stroke="#000000"/>
+      <polyline fill="none" points="271,100 290,100" stroke="#000000"/>
+      <polyline fill="none" points="271,80 290,80" stroke="#000000"/>
+      <polyline fill="none" points="271,240 290,240" stroke="#000000"/>
+      <polyline fill="none" points="271,320 290,320" stroke="#000000"/>
+      <polyline fill="none" points="271,260 290,260" stroke="#000000"/>
+      <polyline fill="none" points="271,280 290,280" stroke="#000000"/>
+      <polyline fill="none" points="271,300 290,300" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="100">D2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="160">D5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="60">D0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="80">D1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="200">O7</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="80">O1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="180">D6</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="140">D4</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="120">O3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="180">O6</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="100">O2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="60">O0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="140">O4</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="160">O5</text>
+      <polyline fill="none" points="30,340 42,340" stroke="#000000"/>
+      <ellipse cx="46" cy="340" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="30,300 42,300" stroke="#000000"/>
+      <ellipse cx="46" cy="300" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="46" cy="520" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="30,520 42,520" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="120">D3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="200">D7</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="339">ARG RESR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="299">ARG RC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="259">OPC RB</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="319">OPC RESR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="279">OPC RC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="239">OPC RA</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="479">DVR5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="439">DVR3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="399">DVR1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="459">DVR4</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="419">DVR2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="379">DVR0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="520">ARG ALU</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="246" y="300">NEG</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="248" y="240">EQL</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="246" y="280">ODD</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="237" y="320">CARRY</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="248" y="260">EQH</text>
+      <polygon fill="none" points="135,340 135,310 155,290 135,270 135,240 165,240 195,270 195,310 165,340" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="141" y="255">A</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="141" y="325">B</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="190" y="290">F</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="175" y="232">Flags</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="155" y="365">S</text>
+      <polyline fill="none" points="114,255 133,255 130,252 134,255 130,258" stroke="#000000"/>
+      <polyline fill="none" points="114,326 133,326 130,323 134,326 130,329" stroke="#000000"/>
+      <polyline fill="none" points="195,290 214,290 211,287 215,290 211,293" stroke="#000000"/>
+      <polyline fill="none" points="155,359 155,341 151,344 155,341 159,344" stroke="#000000"/>
+      <polyline fill="none" points="155,239 155,221 151,224 155,221 159,224" stroke="#000000"/>
+      <circ-anchor facing="east" x="290" y="50"/>
+      <circ-port dir="in" pin="1150,570" x="30" y="460"/>
+      <circ-port dir="in" pin="1550,430" x="30" y="520"/>
+      <circ-port dir="in" pin="290,250" x="30" y="60"/>
+      <circ-port dir="in" pin="290,270" x="30" y="80"/>
+      <circ-port dir="in" pin="290,290" x="30" y="100"/>
+      <circ-port dir="in" pin="290,310" x="30" y="120"/>
+      <circ-port dir="in" pin="290,330" x="30" y="140"/>
+      <circ-port dir="in" pin="290,350" x="30" y="160"/>
+      <circ-port dir="in" pin="290,370" x="30" y="180"/>
+      <circ-port dir="in" pin="290,390" x="30" y="200"/>
+      <circ-port dir="in" pin="530,1170" x="30" y="280"/>
+      <circ-port dir="in" pin="530,1190" x="30" y="300"/>
+      <circ-port dir="in" pin="530,1410" x="30" y="320"/>
+      <circ-port dir="in" pin="530,1430" x="30" y="340"/>
+      <circ-port dir="in" pin="530,430" x="30" y="240"/>
+      <circ-port dir="in" pin="530,710" x="30" y="260"/>
+      <circ-port dir="in" pin="990,830" x="30" y="380"/>
+      <circ-port dir="in" pin="990,850" x="30" y="400"/>
+      <circ-port dir="in" pin="990,870" x="30" y="420"/>
+      <circ-port dir="in" pin="990,890" x="30" y="440"/>
+      <circ-port dir="in" pin="990,930" x="30" y="480"/>
+      <circ-port dir="out" pin="1330,370" x="290" y="240"/>
+      <circ-port dir="out" pin="1330,730" x="290" y="320"/>
+      <circ-port dir="out" pin="1330,750" x="290" y="260"/>
+      <circ-port dir="out" pin="1350,230" x="290" y="280"/>
+      <circ-port dir="out" pin="1520,690" x="290" y="300"/>
+      <circ-port dir="out" pin="1890,250" x="290" y="60"/>
+      <circ-port dir="out" pin="1890,270" x="290" y="80"/>
+      <circ-port dir="out" pin="1890,290" x="290" y="100"/>
+      <circ-port dir="out" pin="1890,310" x="290" y="120"/>
+      <circ-port dir="out" pin="1890,330" x="290" y="140"/>
+      <circ-port dir="out" pin="1890,350" x="290" y="160"/>
+      <circ-port dir="out" pin="1890,370" x="290" y="180"/>
+      <circ-port dir="out" pin="1890,390" x="290" y="200"/>
+    </appear>
+    <comp lib="0" loc="(1150,570)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVR4"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1330,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="EQ_L"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1330,730)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CARRY"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1330,750)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="EQ_H"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1350,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ODD"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1520,690)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="NEG"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1550,430)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ARG_ALU"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1550,450)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1890,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut4"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Dout5"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut6"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1890,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut7"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn4"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn5"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn6"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn7"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,1170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_RC"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,1190)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ARG_RC"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,1410)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_RESR"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,1430)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ARG_RESR"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,430)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_RA"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,450)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(530,710)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_RB"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(530,730)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(990,830)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVR0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(990,850)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVR1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(990,870)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVR2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(990,890)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVR3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(990,930)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVR5"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="12" loc="(1310,240)" name="IC_74181"/>
+    <comp lib="12" loc="(1310,620)" name="IC_74181"/>
+    <comp lib="12" loc="(1710,240)" name="IC_74541"/>
+    <comp lib="12" loc="(690,1220)" name="IC_74374"/>
+    <comp lib="12" loc="(690,240)" name="IC_74374"/>
+    <comp lib="12" loc="(690,520)" name="IC_74374"/>
+    <comp lib="12" loc="(690,980)" name="IC_74374"/>
+    <wire from="(1010,450)" to="(1010,830)"/>
+    <wire from="(1010,450)" to="(1170,450)"/>
+    <wire from="(1010,830)" to="(1170,830)"/>
+    <wire from="(1030,470)" to="(1030,850)"/>
+    <wire from="(1030,470)" to="(1170,470)"/>
+    <wire from="(1030,850)" to="(1170,850)"/>
+    <wire from="(1050,490)" to="(1050,870)"/>
+    <wire from="(1050,490)" to="(1170,490)"/>
+    <wire from="(1050,870)" to="(1170,870)"/>
+    <wire from="(1070,510)" to="(1070,890)"/>
+    <wire from="(1070,510)" to="(1170,510)"/>
+    <wire from="(1070,890)" to="(1170,890)"/>
+    <wire from="(1090,550)" to="(1090,930)"/>
+    <wire from="(1090,550)" to="(1170,550)"/>
+    <wire from="(1090,930)" to="(1170,930)"/>
+    <wire from="(1150,570)" to="(1170,570)"/>
+    <wire from="(1150,600)" to="(1150,950)"/>
+    <wire from="(1150,600)" to="(1400,600)"/>
+    <wire from="(1150,950)" to="(1170,950)"/>
+    <wire from="(1310,250)" to="(1330,250)"/>
+    <wire from="(1310,270)" to="(1570,270)"/>
+    <wire from="(1310,290)" to="(1570,290)"/>
+    <wire from="(1310,310)" to="(1570,310)"/>
+    <wire from="(1310,350)" to="(1400,350)"/>
+    <wire from="(1310,370)" to="(1330,370)"/>
+    <wire from="(1310,630)" to="(1440,630)"/>
+    <wire from="(1310,650)" to="(1460,650)"/>
+    <wire from="(1310,670)" to="(1480,670)"/>
+    <wire from="(1310,690)" to="(1500,690)"/>
+    <wire from="(1310,730)" to="(1330,730)"/>
+    <wire from="(1310,750)" to="(1330,750)"/>
+    <wire from="(1330,230)" to="(1330,250)"/>
+    <wire from="(1330,230)" to="(1350,230)"/>
+    <wire from="(1330,250)" to="(1570,250)"/>
+    <wire from="(1400,350)" to="(1400,600)"/>
+    <wire from="(1440,330)" to="(1440,630)"/>
+    <wire from="(1440,330)" to="(1570,330)"/>
+    <wire from="(1460,350)" to="(1460,650)"/>
+    <wire from="(1460,350)" to="(1570,350)"/>
+    <wire from="(1480,370)" to="(1480,670)"/>
+    <wire from="(1480,370)" to="(1570,370)"/>
+    <wire from="(1500,390)" to="(1500,690)"/>
+    <wire from="(1500,390)" to="(1570,390)"/>
+    <wire from="(1500,690)" to="(1520,690)"/>
+    <wire from="(1550,430)" to="(1570,430)"/>
+    <wire from="(1550,450)" to="(1570,450)"/>
+    <wire from="(1710,250)" to="(1730,250)"/>
+    <wire from="(1710,270)" to="(1750,270)"/>
+    <wire from="(1710,290)" to="(1770,290)"/>
+    <wire from="(1710,310)" to="(1790,310)"/>
+    <wire from="(1710,330)" to="(1810,330)"/>
+    <wire from="(1710,350)" to="(1830,350)"/>
+    <wire from="(1710,370)" to="(1850,370)"/>
+    <wire from="(1710,390)" to="(1870,390)"/>
+    <wire from="(1730,250)" to="(1730,990)"/>
+    <wire from="(1730,250)" to="(1890,250)"/>
+    <wire from="(1750,270)" to="(1750,1010)"/>
+    <wire from="(1750,270)" to="(1890,270)"/>
+    <wire from="(1770,290)" to="(1770,1030)"/>
+    <wire from="(1770,290)" to="(1890,290)"/>
+    <wire from="(1790,310)" to="(1790,1050)"/>
+    <wire from="(1790,310)" to="(1890,310)"/>
+    <wire from="(1810,330)" to="(1810,1070)"/>
+    <wire from="(1810,330)" to="(1890,330)"/>
+    <wire from="(1830,350)" to="(1830,1090)"/>
+    <wire from="(1830,350)" to="(1890,350)"/>
+    <wire from="(1850,370)" to="(1850,1110)"/>
+    <wire from="(1850,370)" to="(1890,370)"/>
+    <wire from="(1870,390)" to="(1870,1130)"/>
+    <wire from="(1870,390)" to="(1890,390)"/>
+    <wire from="(290,250)" to="(450,250)"/>
+    <wire from="(290,270)" to="(430,270)"/>
+    <wire from="(290,290)" to="(410,290)"/>
+    <wire from="(290,310)" to="(390,310)"/>
+    <wire from="(290,330)" to="(370,330)"/>
+    <wire from="(290,350)" to="(350,350)"/>
+    <wire from="(290,370)" to="(330,370)"/>
+    <wire from="(290,390)" to="(310,390)"/>
+    <wire from="(310,1130)" to="(310,1370)"/>
+    <wire from="(310,1130)" to="(550,1130)"/>
+    <wire from="(310,1370)" to="(550,1370)"/>
+    <wire from="(310,390)" to="(310,670)"/>
+    <wire from="(310,390)" to="(550,390)"/>
+    <wire from="(310,670)" to="(310,1130)"/>
+    <wire from="(310,670)" to="(550,670)"/>
+    <wire from="(330,1110)" to="(330,1350)"/>
+    <wire from="(330,1110)" to="(550,1110)"/>
+    <wire from="(330,1350)" to="(550,1350)"/>
+    <wire from="(330,370)" to="(330,650)"/>
+    <wire from="(330,370)" to="(550,370)"/>
+    <wire from="(330,650)" to="(330,1110)"/>
+    <wire from="(330,650)" to="(550,650)"/>
+    <wire from="(350,1090)" to="(350,1330)"/>
+    <wire from="(350,1090)" to="(550,1090)"/>
+    <wire from="(350,1330)" to="(550,1330)"/>
+    <wire from="(350,350)" to="(350,630)"/>
+    <wire from="(350,350)" to="(550,350)"/>
+    <wire from="(350,630)" to="(350,1090)"/>
+    <wire from="(350,630)" to="(550,630)"/>
+    <wire from="(370,1070)" to="(370,1310)"/>
+    <wire from="(370,1070)" to="(550,1070)"/>
+    <wire from="(370,1310)" to="(550,1310)"/>
+    <wire from="(370,330)" to="(370,610)"/>
+    <wire from="(370,330)" to="(550,330)"/>
+    <wire from="(370,610)" to="(370,1070)"/>
+    <wire from="(370,610)" to="(550,610)"/>
+    <wire from="(390,1050)" to="(390,1290)"/>
+    <wire from="(390,1050)" to="(550,1050)"/>
+    <wire from="(390,1290)" to="(550,1290)"/>
+    <wire from="(390,310)" to="(390,590)"/>
+    <wire from="(390,310)" to="(550,310)"/>
+    <wire from="(390,590)" to="(390,1050)"/>
+    <wire from="(390,590)" to="(550,590)"/>
+    <wire from="(410,1030)" to="(410,1270)"/>
+    <wire from="(410,1030)" to="(550,1030)"/>
+    <wire from="(410,1270)" to="(550,1270)"/>
+    <wire from="(410,290)" to="(410,570)"/>
+    <wire from="(410,290)" to="(550,290)"/>
+    <wire from="(410,570)" to="(410,1030)"/>
+    <wire from="(410,570)" to="(550,570)"/>
+    <wire from="(430,1010)" to="(430,1250)"/>
+    <wire from="(430,1010)" to="(550,1010)"/>
+    <wire from="(430,1250)" to="(550,1250)"/>
+    <wire from="(430,270)" to="(430,550)"/>
+    <wire from="(430,270)" to="(550,270)"/>
+    <wire from="(430,550)" to="(430,1010)"/>
+    <wire from="(430,550)" to="(550,550)"/>
+    <wire from="(450,1230)" to="(550,1230)"/>
+    <wire from="(450,250)" to="(450,530)"/>
+    <wire from="(450,250)" to="(550,250)"/>
+    <wire from="(450,530)" to="(450,990)"/>
+    <wire from="(450,530)" to="(550,530)"/>
+    <wire from="(450,990)" to="(450,1230)"/>
+    <wire from="(450,990)" to="(550,990)"/>
+    <wire from="(530,1170)" to="(550,1170)"/>
+    <wire from="(530,1190)" to="(550,1190)"/>
+    <wire from="(530,1410)" to="(550,1410)"/>
+    <wire from="(530,1430)" to="(550,1430)"/>
+    <wire from="(530,430)" to="(550,430)"/>
+    <wire from="(530,450)" to="(550,450)"/>
+    <wire from="(530,710)" to="(550,710)"/>
+    <wire from="(530,730)" to="(550,730)"/>
+    <wire from="(690,1010)" to="(730,1010)"/>
+    <wire from="(690,1030)" to="(750,1030)"/>
+    <wire from="(690,1050)" to="(770,1050)"/>
+    <wire from="(690,1070)" to="(790,1070)"/>
+    <wire from="(690,1090)" to="(810,1090)"/>
+    <wire from="(690,1110)" to="(830,1110)"/>
+    <wire from="(690,1130)" to="(850,1130)"/>
+    <wire from="(690,1230)" to="(710,1230)"/>
+    <wire from="(690,1250)" to="(730,1250)"/>
+    <wire from="(690,1270)" to="(750,1270)"/>
+    <wire from="(690,1290)" to="(770,1290)"/>
+    <wire from="(690,1310)" to="(790,1310)"/>
+    <wire from="(690,1330)" to="(810,1330)"/>
+    <wire from="(690,1350)" to="(830,1350)"/>
+    <wire from="(690,1370)" to="(850,1370)"/>
+    <wire from="(690,250)" to="(1170,250)"/>
+    <wire from="(690,270)" to="(1170,270)"/>
+    <wire from="(690,290)" to="(1170,290)"/>
+    <wire from="(690,310)" to="(1170,310)"/>
+    <wire from="(690,330)" to="(870,330)"/>
+    <wire from="(690,350)" to="(850,350)"/>
+    <wire from="(690,370)" to="(830,370)"/>
+    <wire from="(690,390)" to="(810,390)"/>
+    <wire from="(690,530)" to="(910,530)"/>
+    <wire from="(690,550)" to="(930,550)"/>
+    <wire from="(690,570)" to="(950,570)"/>
+    <wire from="(690,590)" to="(970,590)"/>
+    <wire from="(690,610)" to="(770,610)"/>
+    <wire from="(690,630)" to="(750,630)"/>
+    <wire from="(690,650)" to="(730,650)"/>
+    <wire from="(690,670)" to="(710,670)"/>
+    <wire from="(690,990)" to="(710,990)"/>
+    <wire from="(710,670)" to="(710,790)"/>
+    <wire from="(710,790)" to="(1170,790)"/>
+    <wire from="(710,990)" to="(1730,990)"/>
+    <wire from="(710,990)" to="(710,1230)"/>
+    <wire from="(730,1010)" to="(1750,1010)"/>
+    <wire from="(730,1010)" to="(730,1250)"/>
+    <wire from="(730,650)" to="(730,770)"/>
+    <wire from="(730,770)" to="(1170,770)"/>
+    <wire from="(750,1030)" to="(1770,1030)"/>
+    <wire from="(750,1030)" to="(750,1270)"/>
+    <wire from="(750,630)" to="(750,750)"/>
+    <wire from="(750,750)" to="(1170,750)"/>
+    <wire from="(770,1050)" to="(1790,1050)"/>
+    <wire from="(770,1050)" to="(770,1290)"/>
+    <wire from="(770,610)" to="(770,730)"/>
+    <wire from="(770,730)" to="(1170,730)"/>
+    <wire from="(790,1070)" to="(1810,1070)"/>
+    <wire from="(790,1070)" to="(790,1310)"/>
+    <wire from="(810,1090)" to="(1830,1090)"/>
+    <wire from="(810,1090)" to="(810,1330)"/>
+    <wire from="(810,390)" to="(810,690)"/>
+    <wire from="(810,690)" to="(1170,690)"/>
+    <wire from="(830,1110)" to="(1850,1110)"/>
+    <wire from="(830,1110)" to="(830,1350)"/>
+    <wire from="(830,370)" to="(830,670)"/>
+    <wire from="(830,670)" to="(1170,670)"/>
+    <wire from="(850,1130)" to="(1870,1130)"/>
+    <wire from="(850,1130)" to="(850,1370)"/>
+    <wire from="(850,350)" to="(850,650)"/>
+    <wire from="(850,650)" to="(1170,650)"/>
+    <wire from="(870,330)" to="(870,630)"/>
+    <wire from="(870,630)" to="(1170,630)"/>
+    <wire from="(910,350)" to="(1170,350)"/>
+    <wire from="(910,350)" to="(910,530)"/>
+    <wire from="(930,370)" to="(1170,370)"/>
+    <wire from="(930,370)" to="(930,550)"/>
+    <wire from="(950,390)" to="(1170,390)"/>
+    <wire from="(950,390)" to="(950,570)"/>
+    <wire from="(970,410)" to="(1170,410)"/>
+    <wire from="(970,410)" to="(970,590)"/>
+    <wire from="(990,830)" to="(1010,830)"/>
+    <wire from="(990,850)" to="(1030,850)"/>
+    <wire from="(990,870)" to="(1050,870)"/>
+    <wire from="(990,890)" to="(1070,890)"/>
+    <wire from="(990,930)" to="(1090,930)"/>
+  </circuit>
+  <circuit name="PART_PF">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="PART_PF"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#fff599" height="520" stroke="#000000" width="220" x="60" y="10"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="120">D5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="439">MInc</text>
+      <polyline fill="none" points="40,480 59,480" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="40">D1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="480">Step</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="259">RA1</text>
+      <polyline fill="none" points="40,40 59,40" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="160">O7</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="399">MSet0</text>
+      <polyline fill="none" points="40,120 59,120" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="339">RE</text>
+      <polyline fill="none" points="40,140 59,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="359">WE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="120">O5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="255" y="200">COut</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="140">O6</text>
+      <polyline fill="none" points="40,80 59,80" stroke="#000000"/>
+      <polyline fill="none" points="281,120 300,120" stroke="#000000"/>
+      <polyline fill="none" points="40,100 59,100" stroke="#000000"/>
+      <polyline fill="none" points="160,268 179,268 176,265 180,268 176,271" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="60">O2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="121" y="267">Inc</text>
+      <polyline fill="none" points="40,160 59,160" stroke="#000000"/>
+      <polyline fill="none" points="281,40 300,40" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="140">D6</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="199">CIn</text>
+      <polyline fill="none" points="281,140 300,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="60">D2</text>
+      <polyline fill="none" points="281,100 300,100" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="419">MSet1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="100">D4</text>
+      <polyline fill="none" points="281,80 300,80" stroke="#000000"/>
+      <polyline fill="none" points="40,240 59,240" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="40">O1</text>
+      <polyline fill="none" points="40,60 59,60" stroke="#000000"/>
+      <polyline fill="none" points="201,407 201,389 197,392 201,389 205,392" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="80">O3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="80">D3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="20">O0</text>
+      <polyline fill="none" points="281,200 300,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="279">WA0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="160">D7</text>
+      <polyline fill="none" points="281,20 300,20" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="299">WA1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="239">RA0</text>
+      <polyline fill="none" points="281,160 300,160" stroke="#000000"/>
+      <polyline fill="none" points="40,280 59,280" stroke="#000000"/>
+      <polyline fill="none" points="40,20 59,20" stroke="#000000"/>
+      <polyline fill="none" points="281,60 300,60" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="100">O4</text>
+      <polyline fill="none" points="40,200 59,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="20">D0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="520">OE</text>
+      <ellipse cx="56" cy="520" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,520 52,520" stroke="#000000"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="181" y="228"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="181" y="268"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="181" y="308"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="181" y="348"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="201" y="368">P3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="201" y="328">P2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="201" y="288">P1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="201" y="248">P0</text>
+      <polygon fill="none" points="151,353 151,343 161,348" stroke="#000000"/>
+      <polygon fill="none" points="151,273 151,263 161,268" stroke="#000000"/>
+      <polyline fill="none" points="160,348 179,348 176,345 180,348 176,351" stroke="#000000"/>
+      <rect fill="none" height="20" stroke="#000000" width="20" x="111" y="258"/>
+      <polyline fill="none" points="121,297 121,279 117,282 121,279 125,282" stroke="#000000"/>
+      <polyline fill="none" points="157,369 157,351 153,354 157,351 161,354" stroke="#000000"/>
+      <polyline fill="none" points="157,289 157,271 153,274 157,271 161,274" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="156" y="375">MSet</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="157" y="295">MInc</text>
+      <polyline fill="none" points="132,268 149,268 146,265 150,268 146,271" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="201" y="220">PF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="121" y="303">Step</text>
+      <polyline fill="none" points="130,348 149,348 146,345 150,348 146,351" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="124" y="348">D</text>
+      <polyline fill="none" points="91,268 109,268 106,265 110,268 106,271" stroke="#000000"/>
+      <polyline fill="none" points="91,268 91,198 241,198 241,308 221,308" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="201" y="414">A</text>
+      <polyline fill="none" points="241,308 260,308 257,305 261,308 257,311" stroke="#000000"/>
+      <ellipse cx="56" cy="440" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,440 52,440" stroke="#000000"/>
+      <polyline fill="none" points="40,420 52,420" stroke="#000000"/>
+      <ellipse cx="56" cy="420" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="56" cy="400" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,400 52,400" stroke="#000000"/>
+      <ellipse cx="56" cy="340" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="56" cy="360" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,360 52,360" stroke="#000000"/>
+      <polyline fill="none" points="40,340 52,340" stroke="#000000"/>
+      <polyline fill="none" points="40,260 59,260" stroke="#000000"/>
+      <polyline fill="none" points="40,300 59,300" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="255" y="319">O</text>
+      <circ-anchor facing="east" x="300" y="10"/>
+      <circ-port dir="in" pin="1060,700" x="40" y="280"/>
+      <circ-port dir="in" pin="1060,720" x="40" y="300"/>
+      <circ-port dir="in" pin="1060,740" x="40" y="360"/>
+      <circ-port dir="in" pin="1060,780" x="40" y="240"/>
+      <circ-port dir="in" pin="1060,800" x="40" y="260"/>
+      <circ-port dir="in" pin="1060,820" x="40" y="340"/>
+      <circ-port dir="in" pin="1600,460" x="40" y="520"/>
+      <circ-port dir="in" pin="310,280" x="40" y="200"/>
+      <circ-port dir="in" pin="700,460" x="40" y="480"/>
+      <circ-port dir="in" pin="700,480" x="40" y="440"/>
+      <circ-port dir="in" pin="700,520" x="40" y="20"/>
+      <circ-port dir="in" pin="700,540" x="40" y="40"/>
+      <circ-port dir="in" pin="700,560" x="40" y="60"/>
+      <circ-port dir="in" pin="700,580" x="40" y="80"/>
+      <circ-port dir="in" pin="700,600" x="40" y="100"/>
+      <circ-port dir="in" pin="700,620" x="40" y="120"/>
+      <circ-port dir="in" pin="700,640" x="40" y="140"/>
+      <circ-port dir="in" pin="700,660" x="40" y="160"/>
+      <circ-port dir="in" pin="700,700" x="40" y="400"/>
+      <circ-port dir="in" pin="700,720" x="40" y="420"/>
+      <circ-port dir="out" pin="1780,280" x="300" y="20"/>
+      <circ-port dir="out" pin="1780,300" x="300" y="40"/>
+      <circ-port dir="out" pin="1780,320" x="300" y="60"/>
+      <circ-port dir="out" pin="1780,340" x="300" y="80"/>
+      <circ-port dir="out" pin="1780,360" x="300" y="100"/>
+      <circ-port dir="out" pin="1780,380" x="300" y="120"/>
+      <circ-port dir="out" pin="1780,400" x="300" y="140"/>
+      <circ-port dir="out" pin="1780,420" x="300" y="160"/>
+      <circ-port dir="out" pin="490,640" x="300" y="200"/>
+    </appear>
+    <comp lib="0" loc="(1060,700)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="WA0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1060,720)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="WA1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1060,740)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="WE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1060,780)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RA0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1060,800)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RA1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1060,820)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1600,460)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1600,480)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1780,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut4"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Dout5"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut6"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1780,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut7"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(310,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CIn"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(310,420)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,440)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,460)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,480)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,680)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,700)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,720)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(310,740)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(490,640)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="COut"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,460)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Step"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MInc"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,540)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,560)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,600)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn4"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,620)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn5"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,640)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn6"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,660)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn7"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,700)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MSet0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,720)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MSet1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="12" loc="(1380,270)" name="IC_74670"/>
+    <comp lib="12" loc="(1380,590)" name="IC_74670"/>
+    <comp lib="12" loc="(1760,270)" name="IC_74541"/>
+    <comp lib="12" loc="(470,270)" name="IC_74283"/>
+    <comp lib="12" loc="(470,530)" name="IC_74283"/>
+    <comp lib="12" loc="(860,270)" name="IC_74374"/>
+    <comp lib="12" loc="(860,510)" name="IC_74541"/>
+    <wire from="(1000,400)" to="(1000,640)"/>
+    <wire from="(1000,640)" to="(1240,640)"/>
+    <wire from="(1020,380)" to="(1020,620)"/>
+    <wire from="(1020,620)" to="(1240,620)"/>
+    <wire from="(1040,360)" to="(1040,600)"/>
+    <wire from="(1040,600)" to="(1240,600)"/>
+    <wire from="(1060,700)" to="(1080,700)"/>
+    <wire from="(1060,720)" to="(1100,720)"/>
+    <wire from="(1060,740)" to="(1200,740)"/>
+    <wire from="(1060,780)" to="(1140,780)"/>
+    <wire from="(1060,800)" to="(1160,800)"/>
+    <wire from="(1060,820)" to="(1220,820)"/>
+    <wire from="(1080,380)" to="(1080,700)"/>
+    <wire from="(1080,380)" to="(1240,380)"/>
+    <wire from="(1080,700)" to="(1240,700)"/>
+    <wire from="(110,110)" to="(110,640)"/>
+    <wire from="(110,110)" to="(1540,110)"/>
+    <wire from="(110,640)" to="(330,640)"/>
+    <wire from="(1100,400)" to="(1100,720)"/>
+    <wire from="(1100,400)" to="(1240,400)"/>
+    <wire from="(1100,720)" to="(1240,720)"/>
+    <wire from="(1140,460)" to="(1140,780)"/>
+    <wire from="(1140,460)" to="(1240,460)"/>
+    <wire from="(1140,780)" to="(1240,780)"/>
+    <wire from="(1160,480)" to="(1160,800)"/>
+    <wire from="(1160,480)" to="(1240,480)"/>
+    <wire from="(1160,800)" to="(1240,800)"/>
+    <wire from="(1200,420)" to="(1200,740)"/>
+    <wire from="(1200,420)" to="(1240,420)"/>
+    <wire from="(1200,740)" to="(1240,740)"/>
+    <wire from="(1220,500)" to="(1220,820)"/>
+    <wire from="(1220,500)" to="(1240,500)"/>
+    <wire from="(1220,820)" to="(1240,820)"/>
+    <wire from="(130,130)" to="(130,620)"/>
+    <wire from="(130,130)" to="(1520,130)"/>
+    <wire from="(130,620)" to="(330,620)"/>
+    <wire from="(1380,280)" to="(1400,280)"/>
+    <wire from="(1380,300)" to="(1420,300)"/>
+    <wire from="(1380,320)" to="(1440,320)"/>
+    <wire from="(1380,340)" to="(1460,340)"/>
+    <wire from="(1380,600)" to="(1480,600)"/>
+    <wire from="(1380,620)" to="(1500,620)"/>
+    <wire from="(1380,640)" to="(1520,640)"/>
+    <wire from="(1380,660)" to="(1540,660)"/>
+    <wire from="(1400,250)" to="(1400,280)"/>
+    <wire from="(1400,280)" to="(1620,280)"/>
+    <wire from="(1420,230)" to="(1420,300)"/>
+    <wire from="(1420,300)" to="(1620,300)"/>
+    <wire from="(1440,210)" to="(1440,320)"/>
+    <wire from="(1440,320)" to="(1620,320)"/>
+    <wire from="(1460,190)" to="(1460,340)"/>
+    <wire from="(1460,340)" to="(1620,340)"/>
+    <wire from="(1480,170)" to="(1480,360)"/>
+    <wire from="(1480,360)" to="(1480,600)"/>
+    <wire from="(1480,360)" to="(1620,360)"/>
+    <wire from="(150,150)" to="(150,600)"/>
+    <wire from="(150,150)" to="(1500,150)"/>
+    <wire from="(150,600)" to="(330,600)"/>
+    <wire from="(1500,150)" to="(1500,380)"/>
+    <wire from="(1500,380)" to="(1500,620)"/>
+    <wire from="(1500,380)" to="(1620,380)"/>
+    <wire from="(1520,130)" to="(1520,400)"/>
+    <wire from="(1520,400)" to="(1520,640)"/>
+    <wire from="(1520,400)" to="(1620,400)"/>
+    <wire from="(1540,110)" to="(1540,420)"/>
+    <wire from="(1540,420)" to="(1540,660)"/>
+    <wire from="(1540,420)" to="(1620,420)"/>
+    <wire from="(1600,460)" to="(1620,460)"/>
+    <wire from="(1600,480)" to="(1620,480)"/>
+    <wire from="(170,170)" to="(1480,170)"/>
+    <wire from="(170,170)" to="(170,580)"/>
+    <wire from="(170,580)" to="(330,580)"/>
+    <wire from="(1760,280)" to="(1780,280)"/>
+    <wire from="(1760,300)" to="(1780,300)"/>
+    <wire from="(1760,320)" to="(1780,320)"/>
+    <wire from="(1760,340)" to="(1780,340)"/>
+    <wire from="(1760,360)" to="(1780,360)"/>
+    <wire from="(1760,380)" to="(1780,380)"/>
+    <wire from="(1760,400)" to="(1780,400)"/>
+    <wire from="(1760,420)" to="(1780,420)"/>
+    <wire from="(190,190)" to="(1460,190)"/>
+    <wire from="(190,190)" to="(190,380)"/>
+    <wire from="(190,380)" to="(330,380)"/>
+    <wire from="(210,210)" to="(1440,210)"/>
+    <wire from="(210,210)" to="(210,360)"/>
+    <wire from="(210,360)" to="(330,360)"/>
+    <wire from="(230,230)" to="(1420,230)"/>
+    <wire from="(230,230)" to="(230,340)"/>
+    <wire from="(230,340)" to="(330,340)"/>
+    <wire from="(250,250)" to="(1400,250)"/>
+    <wire from="(250,250)" to="(250,320)"/>
+    <wire from="(250,320)" to="(330,320)"/>
+    <wire from="(310,280)" to="(330,280)"/>
+    <wire from="(310,420)" to="(330,420)"/>
+    <wire from="(310,440)" to="(330,440)"/>
+    <wire from="(310,460)" to="(330,460)"/>
+    <wire from="(310,480)" to="(330,480)"/>
+    <wire from="(310,510)" to="(310,540)"/>
+    <wire from="(310,510)" to="(490,510)"/>
+    <wire from="(310,540)" to="(330,540)"/>
+    <wire from="(310,680)" to="(330,680)"/>
+    <wire from="(310,700)" to="(330,700)"/>
+    <wire from="(310,720)" to="(330,720)"/>
+    <wire from="(310,740)" to="(330,740)"/>
+    <wire from="(470,280)" to="(720,280)"/>
+    <wire from="(470,300)" to="(720,300)"/>
+    <wire from="(470,320)" to="(720,320)"/>
+    <wire from="(470,340)" to="(720,340)"/>
+    <wire from="(470,380)" to="(490,380)"/>
+    <wire from="(470,540)" to="(530,540)"/>
+    <wire from="(470,560)" to="(550,560)"/>
+    <wire from="(470,580)" to="(570,580)"/>
+    <wire from="(470,600)" to="(590,600)"/>
+    <wire from="(470,640)" to="(490,640)"/>
+    <wire from="(490,380)" to="(490,510)"/>
+    <wire from="(530,360)" to="(530,540)"/>
+    <wire from="(530,360)" to="(720,360)"/>
+    <wire from="(550,380)" to="(550,560)"/>
+    <wire from="(550,380)" to="(720,380)"/>
+    <wire from="(570,400)" to="(570,580)"/>
+    <wire from="(570,400)" to="(720,400)"/>
+    <wire from="(590,420)" to="(590,600)"/>
+    <wire from="(590,420)" to="(720,420)"/>
+    <wire from="(700,460)" to="(720,460)"/>
+    <wire from="(700,480)" to="(720,480)"/>
+    <wire from="(700,520)" to="(720,520)"/>
+    <wire from="(700,540)" to="(720,540)"/>
+    <wire from="(700,560)" to="(720,560)"/>
+    <wire from="(700,580)" to="(720,580)"/>
+    <wire from="(700,600)" to="(720,600)"/>
+    <wire from="(700,620)" to="(720,620)"/>
+    <wire from="(700,640)" to="(720,640)"/>
+    <wire from="(700,660)" to="(720,660)"/>
+    <wire from="(700,700)" to="(720,700)"/>
+    <wire from="(700,720)" to="(720,720)"/>
+    <wire from="(860,280)" to="(880,280)"/>
+    <wire from="(860,300)" to="(900,300)"/>
+    <wire from="(860,320)" to="(920,320)"/>
+    <wire from="(860,340)" to="(940,340)"/>
+    <wire from="(860,360)" to="(1040,360)"/>
+    <wire from="(860,380)" to="(1020,380)"/>
+    <wire from="(860,400)" to="(1000,400)"/>
+    <wire from="(860,420)" to="(980,420)"/>
+    <wire from="(860,520)" to="(880,520)"/>
+    <wire from="(860,540)" to="(900,540)"/>
+    <wire from="(860,560)" to="(920,560)"/>
+    <wire from="(860,580)" to="(940,580)"/>
+    <wire from="(860,600)" to="(1040,600)"/>
+    <wire from="(860,620)" to="(1020,620)"/>
+    <wire from="(860,640)" to="(1000,640)"/>
+    <wire from="(860,660)" to="(980,660)"/>
+    <wire from="(880,280)" to="(1240,280)"/>
+    <wire from="(880,280)" to="(880,520)"/>
+    <wire from="(900,300)" to="(1240,300)"/>
+    <wire from="(900,300)" to="(900,540)"/>
+    <wire from="(920,320)" to="(1240,320)"/>
+    <wire from="(920,320)" to="(920,560)"/>
+    <wire from="(940,340)" to="(1240,340)"/>
+    <wire from="(940,340)" to="(940,580)"/>
+    <wire from="(980,420)" to="(980,660)"/>
+    <wire from="(980,660)" to="(1240,660)"/>
+  </circuit>
+  <circuit name="PART_CU">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="PART_CU"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#fff599" height="320" stroke="#000000" width="220" x="50" y="49"/>
+      <polyline fill="none" points="126,261 145,261 142,258 146,261 142,264" stroke="#000000"/>
+      <ellipse cx="46" cy="220" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="30,60 49,60" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="120">En1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="159">Step5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="179">Step6(ACT INC)</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="59">Step0(ACT IR)</text>
+      <ellipse cx="46" cy="200" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="79">Step1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="119">Step3(ACT_OPC)</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="230" y="359">EvenCyc</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="200">ARG ADD</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="60">Clk</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="99">Step2</text>
+      <polyline fill="none" points="30,100 49,100" stroke="#000000"/>
+      <ellipse cx="46" cy="160" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="271,360 290,360" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="100">En0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="160">ACT JMP</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="220">ACT PC</text>
+      <polyline fill="none" points="30,220 42,220" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="218" y="240">INC STAGE</text>
+      <polyline fill="none" points="148,223 148,205 144,208 148,205 152,208" stroke="#000000"/>
+      <polyline fill="none" points="30,200 42,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="238" y="279">ADD R</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="199">Step7</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="193" y="139">Step4</text>
+      <polyline fill="none" points="30,160 42,160" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="228" y="320">ACT ARG</text>
+      <polyline fill="none" points="30,120 49,120" stroke="#000000"/>
+      <polyline fill="none" points="278,100 290,100" stroke="#000000"/>
+      <polyline fill="none" points="278,80 290,80" stroke="#000000"/>
+      <ellipse cx="274" cy="140" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,140 290,140" stroke="#000000"/>
+      <ellipse cx="274" cy="200" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,160 290,160" stroke="#000000"/>
+      <ellipse cx="274" cy="60" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,120 290,120" stroke="#000000"/>
+      <ellipse cx="274" cy="120" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="160" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,60 290,60" stroke="#000000"/>
+      <ellipse cx="274" cy="100" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,200 290,200" stroke="#000000"/>
+      <ellipse cx="274" cy="180" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="80" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,180 290,180" stroke="#000000"/>
+      <polyline fill="none" points="278,240 290,240" stroke="#000000"/>
+      <polyline fill="none" points="278,280 290,280" stroke="#000000"/>
+      <ellipse cx="274" cy="240" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="320" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="280" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,320 290,320" stroke="#000000"/>
+      <polyline fill="none" points="126,271 145,271 142,268 146,271 142,274" stroke="#000000"/>
+      <polyline fill="none" points="178,266 197,266 194,263 198,266 194,269" stroke="#000000"/>
+      <polyline fill="none" points="126,326 145,326 142,323 146,326 142,329" stroke="#000000"/>
+      <polyline fill="none" points="126,316 145,316 142,313 146,316 142,319" stroke="#000000"/>
+      <polyline fill="none" points="178,322 197,322 194,319 198,322 194,325" stroke="#000000"/>
+      <rect fill="none" height="30" stroke="#000000" width="30" x="147" y="251"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="162" y="266">A+B</text>
+      <rect fill="none" height="30" stroke="#000000" width="30" x="147" y="306"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="162" y="321">A+B</text>
+      <rect fill="none" height="150" stroke="#000000" width="40" x="128" y="54"/>
+      <polyline fill="none" points="107,129 126,129 123,126 127,129 123,132" stroke="#000000"/>
+      <polyline fill="none" points="169,59 188,59 185,56 189,59 185,62" stroke="#000000"/>
+      <polyline fill="none" points="169,79 188,79 185,76 189,79 185,82" stroke="#000000"/>
+      <polyline fill="none" points="169,99 188,99 185,96 189,99 185,102" stroke="#000000"/>
+      <polyline fill="none" points="169,119 188,119 185,116 189,119 185,122" stroke="#000000"/>
+      <polyline fill="none" points="169,179 188,179 185,176 189,179 185,182" stroke="#000000"/>
+      <polyline fill="none" points="169,139 188,139 185,136 189,139 185,142" stroke="#000000"/>
+      <polyline fill="none" points="169,159 188,159 185,156 189,159 185,162" stroke="#000000"/>
+      <polyline fill="none" points="169,199 188,199 185,196 189,199 185,202" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="98" y="128">Clk</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="147" y="229">En</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="149" y="130">CNT</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="81" y="258">ARG ADD</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="91" y="273">ACT PC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="179" y="275">ADD R</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="85" y="312">ACT JMP</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="180" y="331">INC STAGE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="107" y="330">Step 6</text>
+      <circ-anchor facing="east" x="290" y="50"/>
+      <circ-port dir="in" pin="210,350" x="30" y="100"/>
+      <circ-port dir="in" pin="210,370" x="30" y="120"/>
+      <circ-port dir="in" pin="210,390" x="30" y="60"/>
+      <circ-port dir="in" pin="690,530" x="30" y="160"/>
+      <circ-port dir="in" pin="690,590" x="30" y="200"/>
+      <circ-port dir="in" pin="690,610" x="30" y="220"/>
+      <circ-port dir="out" pin="1010,450" x="290" y="320"/>
+      <circ-port dir="out" pin="390,290" x="290" y="360"/>
+      <circ-port dir="out" pin="790,230" x="290" y="60"/>
+      <circ-port dir="out" pin="790,250" x="290" y="80"/>
+      <circ-port dir="out" pin="790,270" x="290" y="100"/>
+      <circ-port dir="out" pin="790,290" x="290" y="120"/>
+      <circ-port dir="out" pin="790,310" x="290" y="140"/>
+      <circ-port dir="out" pin="790,330" x="290" y="160"/>
+      <circ-port dir="out" pin="790,350" x="290" y="180"/>
+      <circ-port dir="out" pin="790,370" x="290" y="200"/>
+      <circ-port dir="out" pin="810,520" x="290" y="240"/>
+      <circ-port dir="out" pin="810,600" x="290" y="280"/>
+    </appear>
+    <comp lib="0" loc="(1010,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_ARG"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(210,230)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,250)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,270)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,290)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,330)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="En0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(210,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="En1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(210,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Clk"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(210,430)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(390,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="EvenCyc"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(510,310)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(510,330)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(510,350)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(690,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ACT_JMP"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(690,590)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ARG_ADD"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(690,610)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ACT_PC"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step4"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step5"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step6"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Step7"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(810,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INC_STAGE"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(810,600)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_ADD_R"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="12" loc="(370,220)" name="IC_74161"/>
+    <comp lib="12" loc="(670,220)" name="IC_74138"/>
+    <comp lib="12" loc="(790,500)" name="IC_7408"/>
+    <comp lib="12" loc="(790,580)" name="IC_7408"/>
+    <comp lib="12" loc="(870,400)" name="IC_7408"/>
+    <comp lib="12" loc="(990,430)" name="IC_7408"/>
+    <wire from="(210,230)" to="(230,230)"/>
+    <wire from="(210,250)" to="(230,250)"/>
+    <wire from="(210,270)" to="(230,270)"/>
+    <wire from="(210,290)" to="(230,290)"/>
+    <wire from="(210,330)" to="(230,330)"/>
+    <wire from="(210,350)" to="(230,350)"/>
+    <wire from="(210,370)" to="(230,370)"/>
+    <wire from="(210,390)" to="(230,390)"/>
+    <wire from="(210,430)" to="(230,430)"/>
+    <wire from="(370,230)" to="(530,230)"/>
+    <wire from="(370,250)" to="(530,250)"/>
+    <wire from="(370,270)" to="(530,270)"/>
+    <wire from="(370,290)" to="(390,290)"/>
+    <wire from="(510,310)" to="(530,310)"/>
+    <wire from="(510,330)" to="(530,330)"/>
+    <wire from="(510,350)" to="(530,350)"/>
+    <wire from="(670,230)" to="(790,230)"/>
+    <wire from="(670,250)" to="(790,250)"/>
+    <wire from="(670,270)" to="(770,270)"/>
+    <wire from="(670,290)" to="(750,290)"/>
+    <wire from="(670,310)" to="(730,310)"/>
+    <wire from="(670,330)" to="(790,330)"/>
+    <wire from="(670,350)" to="(690,350)"/>
+    <wire from="(670,370)" to="(790,370)"/>
+    <wire from="(690,350)" to="(690,510)"/>
+    <wire from="(690,350)" to="(790,350)"/>
+    <wire from="(690,510)" to="(710,510)"/>
+    <wire from="(690,530)" to="(710,530)"/>
+    <wire from="(690,590)" to="(710,590)"/>
+    <wire from="(690,610)" to="(710,610)"/>
+    <wire from="(730,310)" to="(730,460)"/>
+    <wire from="(730,310)" to="(790,310)"/>
+    <wire from="(730,460)" to="(910,460)"/>
+    <wire from="(750,290)" to="(750,430)"/>
+    <wire from="(750,290)" to="(790,290)"/>
+    <wire from="(750,430)" to="(790,430)"/>
+    <wire from="(770,270)" to="(770,410)"/>
+    <wire from="(770,270)" to="(790,270)"/>
+    <wire from="(770,410)" to="(790,410)"/>
+    <wire from="(790,520)" to="(810,520)"/>
+    <wire from="(790,600)" to="(810,600)"/>
+    <wire from="(870,420)" to="(890,420)"/>
+    <wire from="(890,420)" to="(890,440)"/>
+    <wire from="(890,440)" to="(910,440)"/>
+    <wire from="(990,450)" to="(1010,450)"/>
+  </circuit>
+  <circuit name="PART_IEU">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="PART_IEU"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#fff599" height="820" stroke="#000000" width="220" x="50" y="50"/>
+      <ellipse cx="46" cy="300" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="271,120 290,120" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="259">DVRH W</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="212" y="340">ARG RESR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="140">O4</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="100">D2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="600">OPC DVRH</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="720">OPC INTE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="160">O5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="480">OPC PFL</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="212" y="320">ARG PFH</text>
+      <polyline fill="none" points="271,100 290,100" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="319">IR W</text>
+      <polyline fill="none" points="271,200 290,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="440">OPC SCT</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="244" y="800">Arg0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="60">O0</text>
+      <polyline fill="none" points="30,300 42,300" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="580">OPC DVRL</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="239">DVRL W</text>
+      <polyline fill="none" points="30,100 49,100" stroke="#000000"/>
+      <polyline fill="none" points="30,140 49,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="420">OPC JMP</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="680">OPC INTSI</text>
+      <polyline fill="none" points="271,80 290,80" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="180">O6</text>
+      <polyline fill="none" points="271,140 290,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="660">OPC RC</text>
+      <polyline fill="none" points="271,60 290,60" stroke="#000000"/>
+      <polyline fill="none" points="271,180 290,180" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="212" y="300">ARG PFL</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="212" y="280">ARG RC</text>
+      <polyline fill="none" points="30,60 49,60" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="500">OPC PFH</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="214" y="240">ARG ALU</text>
+      <polyline fill="none" points="30,180 49,180" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="214" y="260">ARG SCTPS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="180">D6</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="212" y="360">ARG ADD</text>
+      <polyline fill="none" points="30,80 49,80" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="160">D5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="80">O1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="640">OPC RB</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="140">D4</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="200">O7</text>
+      <polyline fill="none" points="271,160 290,160" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="100">O2</text>
+      <polyline fill="none" points="30,120 49,120" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="560">OPC DVRR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="200">D7</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="212" y="380">ARG DVR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="620">OPC RA</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="299">DVR OE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="700">OPC INTSX</text>
+      <polyline fill="none" points="30,240 49,240" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="279">DVR R</text>
+      <polyline fill="none" points="30,160 49,160" stroke="#000000"/>
+      <polyline fill="none" points="30,260 49,260" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="540">OPC ADD</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="80">D1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="460">OPC PS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="120">D3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="60">D0</text>
+      <polyline fill="none" points="30,200 49,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="213" y="520">OPC RESR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="254" y="120">O3</text>
+      <polygon fill="none" points="179,410 179,729 139,719 139,420" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="116" y="563">IR[H]</text>
+      <polyline fill="none" points="180,700 199,700 196,697 200,700 196,703" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="185" y="740">ACT OPC</text>
+      <polyline fill="none" points="180,680 199,680 196,677 200,680 196,683" stroke="#000000"/>
+      <polyline fill="none" points="159,744 159,726 155,729 159,726 163,729" stroke="#000000"/>
+      <polyline fill="none" points="180,620 199,620 196,617 200,620 196,623" stroke="#000000"/>
+      <polyline fill="none" points="180,580 199,580 196,577 200,580 196,583" stroke="#000000"/>
+      <polyline fill="none" points="180,600 199,600 196,597 200,600 196,603" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="160" y="570">DCD</text>
+      <polyline fill="none" points="180,660 199,660 196,657 200,660 196,663" stroke="#000000"/>
+      <polyline fill="none" points="180,640 199,640 196,637 200,640 196,643" stroke="#000000"/>
+      <polyline fill="none" points="118,570 137,570 134,567 138,570 134,573" stroke="#000000"/>
+      <polyline fill="none" points="180,720 199,720 196,717 200,720 196,723" stroke="#000000"/>
+      <polyline fill="none" points="30,360 49,360" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="359">ACT ARG</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="379">ACT OPC</text>
+      <polyline fill="none" points="30,380 49,380" stroke="#000000"/>
+      <polyline fill="none" points="30,280 42,280" stroke="#000000"/>
+      <ellipse cx="46" cy="280" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="30,320 49,320" stroke="#000000"/>
+      <ellipse cx="274" cy="340" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="240" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,280 290,280" stroke="#000000"/>
+      <polyline fill="none" points="278,320 290,320" stroke="#000000"/>
+      <ellipse cx="274" cy="280" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="260" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="380" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,240 290,240" stroke="#000000"/>
+      <ellipse cx="274" cy="360" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,300 290,300" stroke="#000000"/>
+      <polyline fill="none" points="278,260 290,260" stroke="#000000"/>
+      <ellipse cx="274" cy="300" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,380 290,380" stroke="#000000"/>
+      <ellipse cx="274" cy="320" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,340 290,340" stroke="#000000"/>
+      <polyline fill="none" points="278,360 290,360" stroke="#000000"/>
+      <polyline fill="none" points="278,440 290,440" stroke="#000000"/>
+      <ellipse cx="274" cy="500" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,520 290,520" stroke="#000000"/>
+      <polyline fill="none" points="278,560 290,560" stroke="#000000"/>
+      <ellipse cx="274" cy="540" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,460 290,460" stroke="#000000"/>
+      <ellipse cx="274" cy="520" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="420" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,480 290,480" stroke="#000000"/>
+      <polyline fill="none" points="278,500 290,500" stroke="#000000"/>
+      <ellipse cx="274" cy="440" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,540 290,540" stroke="#000000"/>
+      <ellipse cx="274" cy="560" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,420 290,420" stroke="#000000"/>
+      <ellipse cx="274" cy="460" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="480" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,580 290,580" stroke="#000000"/>
+      <polyline fill="none" points="278,660 290,660" stroke="#000000"/>
+      <polyline fill="none" points="278,720 290,720" stroke="#000000"/>
+      <ellipse cx="274" cy="720" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="700" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="680" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <ellipse cx="274" cy="620" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,700 290,700" stroke="#000000"/>
+      <ellipse cx="274" cy="660" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,640 290,640" stroke="#000000"/>
+      <polyline fill="none" points="278,680 290,680" stroke="#000000"/>
+      <ellipse cx="274" cy="580" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,600 290,600" stroke="#000000"/>
+      <ellipse cx="274" cy="640" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="278,620 290,620" stroke="#000000"/>
+      <ellipse cx="274" cy="600" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="271,800 290,800" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="184" y="400">ACT ARG</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="115" y="303">IR[L]</text>
+      <polyline fill="none" points="179,300 198,300 195,297 199,300 195,303" stroke="#000000"/>
+      <polyline fill="none" points="117,310 136,310 133,307 137,310 133,313" stroke="#000000"/>
+      <polyline fill="none" points="158,404 158,386 154,389 158,386 162,389" stroke="#000000"/>
+      <polyline fill="none" points="179,320 198,320 195,317 199,320 195,323" stroke="#000000"/>
+      <polyline fill="none" points="179,280 198,280 195,277 199,280 195,283" stroke="#000000"/>
+      <polygon fill="none" points="178,238 178,389 138,379 138,249" stroke="#000000"/>
+      <polyline fill="none" points="179,340 198,340 195,337 199,340 195,343" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="158" y="310">DCD</text>
+      <polyline fill="none" points="179,260 198,260 195,257 199,260 195,263" stroke="#000000"/>
+      <polyline fill="none" points="179,380 198,380 195,377 199,380 195,383" stroke="#000000"/>
+      <polyline fill="none" points="179,240 198,240 195,237 199,240 195,243" stroke="#000000"/>
+      <polyline fill="none" points="179,360 198,360 195,357 199,360 195,363" stroke="#000000"/>
+      <polyline fill="none" points="180,480 199,480 196,477 200,480 196,483" stroke="#000000"/>
+      <polyline fill="none" points="180,500 199,500 196,497 200,500 196,503" stroke="#000000"/>
+      <polyline fill="none" points="180,460 199,460 196,457 200,460 196,463" stroke="#000000"/>
+      <polyline fill="none" points="180,520 199,520 196,517 200,520 196,523" stroke="#000000"/>
+      <polyline fill="none" points="180,440 199,440 196,437 200,440 196,443" stroke="#000000"/>
+      <polyline fill="none" points="180,560 199,560 196,557 200,560 196,563" stroke="#000000"/>
+      <polyline fill="none" points="180,420 199,420 196,417 200,420 196,423" stroke="#000000"/>
+      <polyline fill="none" points="180,540 199,540 196,537 200,540 196,543" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="123" y="110">IR[L]</text>
+      <polyline fill="none" points="125,117 144,117 141,114 145,117 141,120" stroke="#000000"/>
+      <polyline fill="none" points="176,132 195,132 192,129 196,132 192,135" stroke="#000000"/>
+      <rect fill="none" height="30" stroke="#000000" width="30" x="146" y="102"/>
+      <rect fill="none" height="30" stroke="#000000" width="30" x="146" y="132"/>
+      <polyline fill="none" points="125,147 144,147 141,144 145,147 141,150" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="123" y="140">IR[H]</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="148" y="117">DVRL</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="147" y="147">DVRH</text>
+      <polyline fill="none" points="271,820 290,820" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="244" y="820">Arg1</text>
+      <polyline fill="none" points="271,860 290,860" stroke="#000000"/>
+      <polyline fill="none" points="271,840 290,840" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="244" y="860">Arg3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="244" y="840">Arg2</text>
+      <polyline fill="none" points="271,760 290,760" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="244" y="760">JmpS</text>
+      <polyline fill="none" points="215,832 234,832 231,829 235,832 231,835" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="198" y="831">IR[L]</text>
+      <circ-anchor facing="east" x="290" y="50"/>
+      <circ-port dir="in" pin="130,720" x="30" y="60"/>
+      <circ-port dir="in" pin="130,740" x="30" y="80"/>
+      <circ-port dir="in" pin="130,760" x="30" y="100"/>
+      <circ-port dir="in" pin="130,780" x="30" y="120"/>
+      <circ-port dir="in" pin="130,800" x="30" y="140"/>
+      <circ-port dir="in" pin="130,820" x="30" y="160"/>
+      <circ-port dir="in" pin="130,840" x="30" y="180"/>
+      <circ-port dir="in" pin="130,860" x="30" y="200"/>
+      <circ-port dir="in" pin="130,900" x="30" y="320"/>
+      <circ-port dir="in" pin="470,300" x="30" y="240"/>
+      <circ-port dir="in" pin="470,540" x="30" y="260"/>
+      <circ-port dir="in" pin="470,580" x="30" y="280"/>
+      <circ-port dir="in" pin="470,920" x="30" y="380"/>
+      <circ-port dir="in" pin="520,740" x="30" y="360"/>
+      <circ-port dir="in" pin="850,320" x="30" y="300"/>
+      <circ-port dir="out" pin="1030,140" x="290" y="60"/>
+      <circ-port dir="out" pin="1030,160" x="290" y="80"/>
+      <circ-port dir="out" pin="1030,180" x="290" y="100"/>
+      <circ-port dir="out" pin="1030,200" x="290" y="120"/>
+      <circ-port dir="out" pin="1030,220" x="290" y="140"/>
+      <circ-port dir="out" pin="1030,240" x="290" y="160"/>
+      <circ-port dir="out" pin="1030,260" x="290" y="180"/>
+      <circ-port dir="out" pin="1030,280" x="290" y="200"/>
+      <circ-port dir="out" pin="390,110" x="290" y="860"/>
+      <circ-port dir="out" pin="390,50" x="290" y="800"/>
+      <circ-port dir="out" pin="390,70" x="290" y="820"/>
+      <circ-port dir="out" pin="390,90" x="290" y="840"/>
+      <circ-port dir="out" pin="700,1000" x="290" y="600"/>
+      <circ-port dir="out" pin="700,1020" x="290" y="620"/>
+      <circ-port dir="out" pin="700,1040" x="290" y="640"/>
+      <circ-port dir="out" pin="700,1060" x="290" y="660"/>
+      <circ-port dir="out" pin="700,1080" x="290" y="680"/>
+      <circ-port dir="out" pin="700,1100" x="290" y="700"/>
+      <circ-port dir="out" pin="700,1120" x="290" y="720"/>
+      <circ-port dir="out" pin="700,1160" x="290" y="760"/>
+      <circ-port dir="out" pin="700,620" x="290" y="240"/>
+      <circ-port dir="out" pin="700,640" x="290" y="260"/>
+      <circ-port dir="out" pin="700,660" x="290" y="280"/>
+      <circ-port dir="out" pin="700,680" x="290" y="300"/>
+      <circ-port dir="out" pin="700,700" x="290" y="320"/>
+      <circ-port dir="out" pin="700,720" x="290" y="340"/>
+      <circ-port dir="out" pin="700,740" x="290" y="360"/>
+      <circ-port dir="out" pin="700,760" x="290" y="380"/>
+      <circ-port dir="out" pin="700,800" x="290" y="420"/>
+      <circ-port dir="out" pin="700,820" x="290" y="440"/>
+      <circ-port dir="out" pin="700,840" x="290" y="460"/>
+      <circ-port dir="out" pin="700,860" x="290" y="480"/>
+      <circ-port dir="out" pin="700,880" x="290" y="500"/>
+      <circ-port dir="out" pin="700,900" x="290" y="520"/>
+      <circ-port dir="out" pin="700,920" x="290" y="540"/>
+      <circ-port dir="out" pin="700,940" x="290" y="560"/>
+      <circ-port dir="out" pin="700,980" x="290" y="580"/>
+    </appear>
+    <comp lib="0" loc="(1030,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut4"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Dout5"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut6"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut7"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,720)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,740)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,760)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,780)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,800)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn4"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,820)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn5"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,840)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn6"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,860)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn7"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,900)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="IR"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,920)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(390,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Arg3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(390,50)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Arg0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(390,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Arg1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(390,90)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Arg2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(470,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVRLW"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(470,540)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVRHW"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(470,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVRR"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(470,920)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ACT_OPC"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(520,1080)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,1240)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,1280)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,240)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,260)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,280)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,480)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,500)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,520)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,700)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(520,740)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ACT_ARG"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(520,880)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(700,1000)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_DVRH"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1020)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_RA"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1040)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_RB"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1060)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_RC"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1080)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_INTSI"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_INTSX"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1120)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_INTE"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,1160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="JMP_SENSE"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,620)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_ALU"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,640)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_SFPS"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,660)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_RC"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,680)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_PFL"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,700)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_PFH"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,720)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_RESR"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,740)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_ADD"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,760)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ARG_DVR"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,800)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_JMP"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,820)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_SF"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,840)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_PS"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,860)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_PFL"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,880)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_PFH"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,900)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_RESR"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,920)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_ADD"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,940)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_DVRR"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,980)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OPC_DVRL"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(850,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DVROE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(850,340)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="12" loc="(1010,130)" name="IC_74541"/>
+    <comp lib="12" loc="(290,710)" name="IC_74374"/>
+    <comp lib="12" loc="(680,1150)" name="IC_74138"/>
+    <comp lib="12" loc="(680,130)" name="IC_74161"/>
+    <comp lib="12" loc="(680,370)" name="IC_74161"/>
+    <comp lib="12" loc="(680,610)" name="IC_74138"/>
+    <comp lib="12" loc="(680,790)" name="IC_74138"/>
+    <comp lib="12" loc="(680,970)" name="IC_74138"/>
+    <wire from="(1010,140)" to="(1030,140)"/>
+    <wire from="(1010,160)" to="(1030,160)"/>
+    <wire from="(1010,180)" to="(1030,180)"/>
+    <wire from="(1010,200)" to="(1030,200)"/>
+    <wire from="(1010,220)" to="(1030,220)"/>
+    <wire from="(1010,240)" to="(1030,240)"/>
+    <wire from="(1010,260)" to="(1030,260)"/>
+    <wire from="(1010,280)" to="(1030,280)"/>
+    <wire from="(130,720)" to="(150,720)"/>
+    <wire from="(130,740)" to="(150,740)"/>
+    <wire from="(130,760)" to="(150,760)"/>
+    <wire from="(130,780)" to="(150,780)"/>
+    <wire from="(130,800)" to="(150,800)"/>
+    <wire from="(130,820)" to="(150,820)"/>
+    <wire from="(130,840)" to="(150,840)"/>
+    <wire from="(130,860)" to="(150,860)"/>
+    <wire from="(130,900)" to="(150,900)"/>
+    <wire from="(130,920)" to="(150,920)"/>
+    <wire from="(290,720)" to="(310,720)"/>
+    <wire from="(290,740)" to="(330,740)"/>
+    <wire from="(290,760)" to="(350,760)"/>
+    <wire from="(290,780)" to="(370,780)"/>
+    <wire from="(290,800)" to="(370,800)"/>
+    <wire from="(290,820)" to="(350,820)"/>
+    <wire from="(290,840)" to="(330,840)"/>
+    <wire from="(290,860)" to="(310,860)"/>
+    <wire from="(310,1060)" to="(310,1260)"/>
+    <wire from="(310,1060)" to="(540,1060)"/>
+    <wire from="(310,1260)" to="(540,1260)"/>
+    <wire from="(310,140)" to="(310,380)"/>
+    <wire from="(310,140)" to="(540,140)"/>
+    <wire from="(310,380)" to="(310,620)"/>
+    <wire from="(310,380)" to="(540,380)"/>
+    <wire from="(310,50)" to="(310,140)"/>
+    <wire from="(310,50)" to="(390,50)"/>
+    <wire from="(310,620)" to="(310,720)"/>
+    <wire from="(310,620)" to="(540,620)"/>
+    <wire from="(310,860)" to="(310,900)"/>
+    <wire from="(310,900)" to="(310,1060)"/>
+    <wire from="(310,900)" to="(540,900)"/>
+    <wire from="(330,1020)" to="(330,1200)"/>
+    <wire from="(330,1020)" to="(540,1020)"/>
+    <wire from="(330,1200)" to="(540,1200)"/>
+    <wire from="(330,160)" to="(330,400)"/>
+    <wire from="(330,160)" to="(540,160)"/>
+    <wire from="(330,400)" to="(330,640)"/>
+    <wire from="(330,400)" to="(540,400)"/>
+    <wire from="(330,640)" to="(330,740)"/>
+    <wire from="(330,640)" to="(540,640)"/>
+    <wire from="(330,70)" to="(330,160)"/>
+    <wire from="(330,70)" to="(390,70)"/>
+    <wire from="(330,840)" to="(330,1020)"/>
+    <wire from="(330,840)" to="(540,840)"/>
+    <wire from="(350,1000)" to="(350,1180)"/>
+    <wire from="(350,1000)" to="(540,1000)"/>
+    <wire from="(350,1180)" to="(540,1180)"/>
+    <wire from="(350,180)" to="(350,420)"/>
+    <wire from="(350,180)" to="(540,180)"/>
+    <wire from="(350,420)" to="(350,660)"/>
+    <wire from="(350,420)" to="(540,420)"/>
+    <wire from="(350,660)" to="(350,760)"/>
+    <wire from="(350,660)" to="(540,660)"/>
+    <wire from="(350,820)" to="(350,1000)"/>
+    <wire from="(350,820)" to="(540,820)"/>
+    <wire from="(350,90)" to="(350,180)"/>
+    <wire from="(350,90)" to="(390,90)"/>
+    <wire from="(370,110)" to="(370,200)"/>
+    <wire from="(370,110)" to="(390,110)"/>
+    <wire from="(370,1160)" to="(540,1160)"/>
+    <wire from="(370,200)" to="(370,440)"/>
+    <wire from="(370,200)" to="(540,200)"/>
+    <wire from="(370,440)" to="(370,720)"/>
+    <wire from="(370,440)" to="(540,440)"/>
+    <wire from="(370,720)" to="(370,780)"/>
+    <wire from="(370,720)" to="(540,720)"/>
+    <wire from="(370,800)" to="(370,980)"/>
+    <wire from="(370,800)" to="(540,800)"/>
+    <wire from="(370,980)" to="(370,1160)"/>
+    <wire from="(370,980)" to="(540,980)"/>
+    <wire from="(470,300)" to="(540,300)"/>
+    <wire from="(470,540)" to="(540,540)"/>
+    <wire from="(470,580)" to="(490,580)"/>
+    <wire from="(470,920)" to="(490,920)"/>
+    <wire from="(490,1100)" to="(540,1100)"/>
+    <wire from="(490,340)" to="(490,580)"/>
+    <wire from="(490,340)" to="(540,340)"/>
+    <wire from="(490,580)" to="(540,580)"/>
+    <wire from="(490,920)" to="(490,1100)"/>
+    <wire from="(490,920)" to="(540,920)"/>
+    <wire from="(520,1080)" to="(540,1080)"/>
+    <wire from="(520,1240)" to="(540,1240)"/>
+    <wire from="(520,1280)" to="(540,1280)"/>
+    <wire from="(520,240)" to="(540,240)"/>
+    <wire from="(520,260)" to="(540,260)"/>
+    <wire from="(520,280)" to="(540,280)"/>
+    <wire from="(520,480)" to="(540,480)"/>
+    <wire from="(520,500)" to="(540,500)"/>
+    <wire from="(520,520)" to="(540,520)"/>
+    <wire from="(520,700)" to="(540,700)"/>
+    <wire from="(520,740)" to="(540,740)"/>
+    <wire from="(520,880)" to="(540,880)"/>
+    <wire from="(680,1000)" to="(700,1000)"/>
+    <wire from="(680,1020)" to="(700,1020)"/>
+    <wire from="(680,1040)" to="(700,1040)"/>
+    <wire from="(680,1060)" to="(700,1060)"/>
+    <wire from="(680,1080)" to="(700,1080)"/>
+    <wire from="(680,1100)" to="(700,1100)"/>
+    <wire from="(680,1120)" to="(700,1120)"/>
+    <wire from="(680,1160)" to="(700,1160)"/>
+    <wire from="(680,140)" to="(870,140)"/>
+    <wire from="(680,160)" to="(870,160)"/>
+    <wire from="(680,180)" to="(870,180)"/>
+    <wire from="(680,200)" to="(870,200)"/>
+    <wire from="(680,380)" to="(700,380)"/>
+    <wire from="(680,400)" to="(720,400)"/>
+    <wire from="(680,420)" to="(740,420)"/>
+    <wire from="(680,440)" to="(760,440)"/>
+    <wire from="(680,620)" to="(700,620)"/>
+    <wire from="(680,640)" to="(700,640)"/>
+    <wire from="(680,660)" to="(700,660)"/>
+    <wire from="(680,680)" to="(700,680)"/>
+    <wire from="(680,700)" to="(700,700)"/>
+    <wire from="(680,720)" to="(700,720)"/>
+    <wire from="(680,740)" to="(700,740)"/>
+    <wire from="(680,760)" to="(700,760)"/>
+    <wire from="(680,800)" to="(700,800)"/>
+    <wire from="(680,820)" to="(700,820)"/>
+    <wire from="(680,840)" to="(700,840)"/>
+    <wire from="(680,860)" to="(700,860)"/>
+    <wire from="(680,880)" to="(700,880)"/>
+    <wire from="(680,900)" to="(700,900)"/>
+    <wire from="(680,920)" to="(700,920)"/>
+    <wire from="(680,940)" to="(700,940)"/>
+    <wire from="(680,980)" to="(700,980)"/>
+    <wire from="(700,220)" to="(700,380)"/>
+    <wire from="(700,220)" to="(870,220)"/>
+    <wire from="(720,240)" to="(720,400)"/>
+    <wire from="(720,240)" to="(870,240)"/>
+    <wire from="(740,260)" to="(740,420)"/>
+    <wire from="(740,260)" to="(870,260)"/>
+    <wire from="(760,280)" to="(760,440)"/>
+    <wire from="(760,280)" to="(870,280)"/>
+    <wire from="(850,320)" to="(870,320)"/>
+    <wire from="(850,340)" to="(870,340)"/>
+  </circuit>
+  <circuit name="PART_SCTPS">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="PART_SCTPS"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#fff599" height="481" stroke="#000000" width="220" x="60" y="10"/>
+      <polyline fill="none" points="40,360 52,360" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="259">WA1</text>
+      <polyline fill="none" points="40,120 59,120" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="40">D1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="359">MPC</text>
+      <polyline fill="none" points="281,220 300,220" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="299">SFW</text>
+      <polyline fill="none" points="40,220 59,220" stroke="#000000"/>
+      <ellipse cx="56" cy="380" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="281,140 300,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="20">D0</text>
+      <polyline fill="none" points="40,320 59,320" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="100">O4</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="251" y="200">PRA0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="120">D5</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="140">D6</text>
+      <polyline fill="none" points="40,20 59,20" stroke="#000000"/>
+      <polyline fill="none" points="40,240 59,240" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="219">RA1</text>
+      <ellipse cx="56" cy="360" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,420 52,420" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="480">OE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="120">O5</text>
+      <polyline fill="none" points="40,40 59,40" stroke="#000000"/>
+      <polyline fill="none" points="281,120 300,120" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="20">O0</text>
+      <polyline fill="none" points="40,160 59,160" stroke="#000000"/>
+      <ellipse cx="56" cy="480" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="281,20 300,20" stroke="#000000"/>
+      <polyline fill="none" points="281,200 300,200" stroke="#000000"/>
+      <polyline fill="none" points="281,80 300,80" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="140">O6</text>
+      <polyline fill="none" points="281,240 300,240" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="199">RA0</text>
+      <polyline fill="none" points="281,60 300,60" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="440">IntR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="60">O2</text>
+      <polyline fill="none" points="40,140 59,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="251" y="240">PWA0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="251" y="260">PWA1</text>
+      <polyline fill="none" points="281,40 300,40" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="160">D7</text>
+      <polyline fill="none" points="40,100 59,100" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="319">PSW</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="40">O1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="60">D2</text>
+      <polyline fill="none" points="281,160 300,160" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="160">O7</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="80">D3</text>
+      <ellipse cx="56" cy="300" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,380 52,380" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="251" y="220">PRA1</text>
+      <polyline fill="none" points="40,80 59,80" stroke="#000000"/>
+      <polyline fill="none" points="281,260 300,260" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="100">D4</text>
+      <polyline fill="none" points="40,300 52,300" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="241" y="300">ACT INT</text>
+      <polyline fill="none" points="281,100 300,100" stroke="#000000"/>
+      <ellipse cx="56" cy="420" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,480 52,480" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="379">MPS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="264" y="80">O3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="419">Int</text>
+      <polyline fill="none" points="40,60 59,60" stroke="#000000"/>
+      <polyline fill="none" points="40,200 59,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="62" y="239">WA0</text>
+      <polyline fill="none" points="40,260 59,260" stroke="#000000"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="152" y="104"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="172" y="204">P3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="207" y="155">O</text>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="152" y="144"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="172" y="250">A</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="172" y="84">P0</text>
+      <polyline fill="none" points="193,144 212,144 209,141 213,144 209,147" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="172" y="164">P2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="126" y="144">D</text>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="152" y="64"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="152" y="184"/>
+      <polyline fill="none" points="132,144 151,144 148,141 152,144 148,147" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="172" y="56">SF</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="172" y="124">P1</text>
+      <polyline fill="none" points="172,243 172,225 168,228 172,225 176,228" stroke="#000000"/>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="152" y="276"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="172" y="296">PS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="207" y="308">O</text>
+      <polyline fill="none" points="193,297 212,297 209,294 213,297 209,300" stroke="#000000"/>
+      <polyline fill="none" points="131,296 150,296 147,293 151,296 147,299" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="125" y="296">D</text>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="121" y="372"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="204" y="437">MPS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="146" y="437">IntR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="178" y="437">MPC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="126" y="437">Int</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="236" y="402">PA</text>
+      <polyline fill="none" points="131,431 131,413 127,416 131,413 135,416" stroke="#000000"/>
+      <polyline fill="none" points="151,431 151,413 147,416 151,413 155,416" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="141" y="392">IntU</text>
+      <rect fill="none" height="40" stroke="#000000" width="40" x="181" y="372"/>
+      <polyline fill="none" points="191,431 191,413 187,416 191,413 195,416" stroke="#000000"/>
+      <polyline fill="none" points="211,431 211,413 207,416 211,413 215,416" stroke="#000000"/>
+      <polyline fill="none" points="222,392 241,392 238,389 242,392 238,395" stroke="#000000"/>
+      <polyline fill="none" points="161,392 180,392 177,389 181,392 177,395" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="201" y="392">PAC</text>
+      <ellipse cx="56" cy="440" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="40,440 52,440" stroke="#000000"/>
+      <ellipse cx="284" cy="300" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="288,300 300,300" stroke="#000000"/>
+      <circ-anchor facing="east" x="300" y="10"/>
+      <circ-port dir="in" pin="1010,320" x="40" y="360"/>
+      <circ-port dir="in" pin="1010,660" x="40" y="380"/>
+      <circ-port dir="in" pin="170,140" x="40" y="20"/>
+      <circ-port dir="in" pin="170,160" x="40" y="40"/>
+      <circ-port dir="in" pin="170,180" x="40" y="60"/>
+      <circ-port dir="in" pin="170,200" x="40" y="80"/>
+      <circ-port dir="in" pin="170,240" x="40" y="240"/>
+      <circ-port dir="in" pin="170,260" x="40" y="260"/>
+      <circ-port dir="in" pin="170,280" x="40" y="300"/>
+      <circ-port dir="in" pin="170,320" x="40" y="200"/>
+      <circ-port dir="in" pin="170,340" x="40" y="220"/>
+      <circ-port dir="in" pin="170,480" x="40" y="100"/>
+      <circ-port dir="in" pin="170,500" x="40" y="120"/>
+      <circ-port dir="in" pin="170,520" x="40" y="140"/>
+      <circ-port dir="in" pin="170,540" x="40" y="160"/>
+      <circ-port dir="in" pin="170,580" x="40" y="320"/>
+      <circ-port dir="in" pin="470,320" x="40" y="480"/>
+      <circ-port dir="in" pin="800,300" x="40" y="420"/>
+      <circ-port dir="in" pin="800,340" x="40" y="440"/>
+      <circ-port dir="out" pin="1000,100" x="300" y="300"/>
+      <circ-port dir="out" pin="1270,140" x="300" y="200"/>
+      <circ-port dir="out" pin="1270,160" x="300" y="220"/>
+      <circ-port dir="out" pin="1270,180" x="300" y="240"/>
+      <circ-port dir="out" pin="1270,200" x="300" y="260"/>
+      <circ-port dir="out" pin="650,140" x="300" y="20"/>
+      <circ-port dir="out" pin="650,160" x="300" y="40"/>
+      <circ-port dir="out" pin="650,180" x="300" y="60"/>
+      <circ-port dir="out" pin="650,200" x="300" y="80"/>
+      <circ-port dir="out" pin="650,220" x="300" y="100"/>
+      <circ-port dir="out" pin="650,240" x="300" y="120"/>
+      <circ-port dir="out" pin="650,260" x="300" y="140"/>
+      <circ-port dir="out" pin="650,280" x="300" y="160"/>
+    </appear>
+    <comp lib="0" loc="(1000,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INT"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1010,140)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,180)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,220)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,240)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,260)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,280)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MPC"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1010,340)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,560)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,580)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,600)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,620)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1010,660)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MPS"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1010,680)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1270,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PRA0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1270,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PRA1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1270,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PWA0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1270,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PWA1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="WA0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="WA1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="SFW"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RA0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RA1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,360)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(170,400)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(170,420)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(170,440)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(170,460)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(170,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn4"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,500)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn5"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn6"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,540)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="DIn7"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="PSW"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,600)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(470,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(470,340)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(650,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut0"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut1"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut2"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut3"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut4"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Dout5"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut6"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(650,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DOut7"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(800,140)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,160)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,180)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,200)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,240)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,260)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,280)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(800,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Int"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(800,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="IntR"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="12" loc="(1170,130)" name="IC_74541"/>
+    <comp lib="12" loc="(1170,470)" name="IC_74541"/>
+    <comp lib="12" loc="(330,130)" name="IC_74670"/>
+    <comp lib="12" loc="(330,390)" name="IC_74374"/>
+    <comp lib="12" loc="(630,130)" name="IC_74541"/>
+    <comp lib="12" loc="(960,130)" name="IC_74161"/>
+    <wire from="(1010,140)" to="(1030,140)"/>
+    <wire from="(1010,180)" to="(1030,180)"/>
+    <wire from="(1010,220)" to="(1030,220)"/>
+    <wire from="(1010,240)" to="(1030,240)"/>
+    <wire from="(1010,260)" to="(1030,260)"/>
+    <wire from="(1010,280)" to="(1030,280)"/>
+    <wire from="(1010,320)" to="(1030,320)"/>
+    <wire from="(1010,340)" to="(1030,340)"/>
+    <wire from="(1010,560)" to="(1030,560)"/>
+    <wire from="(1010,580)" to="(1030,580)"/>
+    <wire from="(1010,600)" to="(1030,600)"/>
+    <wire from="(1010,620)" to="(1030,620)"/>
+    <wire from="(1010,660)" to="(1030,660)"/>
+    <wire from="(1010,680)" to="(1030,680)"/>
+    <wire from="(1170,140)" to="(1190,140)"/>
+    <wire from="(1170,160)" to="(1210,160)"/>
+    <wire from="(1170,180)" to="(1230,180)"/>
+    <wire from="(1170,200)" to="(1250,200)"/>
+    <wire from="(1170,480)" to="(1190,480)"/>
+    <wire from="(1170,500)" to="(1210,500)"/>
+    <wire from="(1170,520)" to="(1230,520)"/>
+    <wire from="(1170,540)" to="(1250,540)"/>
+    <wire from="(1190,140)" to="(1190,480)"/>
+    <wire from="(1190,140)" to="(1270,140)"/>
+    <wire from="(1210,160)" to="(1210,500)"/>
+    <wire from="(1210,160)" to="(1270,160)"/>
+    <wire from="(1230,180)" to="(1230,520)"/>
+    <wire from="(1230,180)" to="(1270,180)"/>
+    <wire from="(1250,200)" to="(1250,540)"/>
+    <wire from="(1250,200)" to="(1270,200)"/>
+    <wire from="(170,140)" to="(190,140)"/>
+    <wire from="(170,160)" to="(190,160)"/>
+    <wire from="(170,180)" to="(190,180)"/>
+    <wire from="(170,200)" to="(190,200)"/>
+    <wire from="(170,240)" to="(190,240)"/>
+    <wire from="(170,260)" to="(190,260)"/>
+    <wire from="(170,280)" to="(190,280)"/>
+    <wire from="(170,320)" to="(190,320)"/>
+    <wire from="(170,340)" to="(190,340)"/>
+    <wire from="(170,360)" to="(190,360)"/>
+    <wire from="(170,400)" to="(190,400)"/>
+    <wire from="(170,420)" to="(190,420)"/>
+    <wire from="(170,440)" to="(190,440)"/>
+    <wire from="(170,460)" to="(190,460)"/>
+    <wire from="(170,480)" to="(190,480)"/>
+    <wire from="(170,500)" to="(190,500)"/>
+    <wire from="(170,520)" to="(190,520)"/>
+    <wire from="(170,540)" to="(190,540)"/>
+    <wire from="(170,580)" to="(190,580)"/>
+    <wire from="(170,600)" to="(190,600)"/>
+    <wire from="(330,140)" to="(490,140)"/>
+    <wire from="(330,160)" to="(490,160)"/>
+    <wire from="(330,180)" to="(490,180)"/>
+    <wire from="(330,200)" to="(490,200)"/>
+    <wire from="(330,480)" to="(350,480)"/>
+    <wire from="(330,500)" to="(370,500)"/>
+    <wire from="(330,520)" to="(390,520)"/>
+    <wire from="(330,540)" to="(410,540)"/>
+    <wire from="(350,220)" to="(350,480)"/>
+    <wire from="(350,220)" to="(490,220)"/>
+    <wire from="(350,480)" to="(1030,480)"/>
+    <wire from="(370,240)" to="(370,500)"/>
+    <wire from="(370,240)" to="(490,240)"/>
+    <wire from="(370,500)" to="(1030,500)"/>
+    <wire from="(390,260)" to="(390,520)"/>
+    <wire from="(390,260)" to="(490,260)"/>
+    <wire from="(390,520)" to="(1030,520)"/>
+    <wire from="(410,280)" to="(410,540)"/>
+    <wire from="(410,280)" to="(490,280)"/>
+    <wire from="(410,540)" to="(1030,540)"/>
+    <wire from="(470,320)" to="(490,320)"/>
+    <wire from="(470,340)" to="(490,340)"/>
+    <wire from="(630,140)" to="(650,140)"/>
+    <wire from="(630,160)" to="(650,160)"/>
+    <wire from="(630,180)" to="(650,180)"/>
+    <wire from="(630,200)" to="(650,200)"/>
+    <wire from="(630,220)" to="(650,220)"/>
+    <wire from="(630,240)" to="(650,240)"/>
+    <wire from="(630,260)" to="(650,260)"/>
+    <wire from="(630,280)" to="(650,280)"/>
+    <wire from="(800,140)" to="(820,140)"/>
+    <wire from="(800,160)" to="(820,160)"/>
+    <wire from="(800,180)" to="(820,180)"/>
+    <wire from="(800,200)" to="(820,200)"/>
+    <wire from="(800,240)" to="(820,240)"/>
+    <wire from="(800,260)" to="(820,260)"/>
+    <wire from="(800,280)" to="(820,280)"/>
+    <wire from="(800,300)" to="(820,300)"/>
+    <wire from="(800,340)" to="(820,340)"/>
+    <wire from="(960,140)" to="(980,140)"/>
+    <wire from="(980,100)" to="(1000,100)"/>
+    <wire from="(980,100)" to="(980,140)"/>
+    <wire from="(980,140)" to="(980,160)"/>
+    <wire from="(980,160)" to="(1030,160)"/>
+    <wire from="(980,160)" to="(980,200)"/>
+    <wire from="(980,200)" to="(1030,200)"/>
+  </circuit>
+  <circuit name="PART_CMBL">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="PART_CMBL"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#fff599" height="480" stroke="#000000" width="220" x="50" y="50"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="160">ODD</text>
+      <polyline fill="none" points="271,260 290,260" stroke="#000000"/>
+      <polyline fill="none" points="30,100 49,100" stroke="#000000"/>
+      <polyline fill="none" points="271,180 290,180" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="80">INT</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="479">ARG3</text>
+      <polyline fill="none" points="30,200 49,200" stroke="#000000"/>
+      <polyline fill="none" points="30,320 49,320" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="339">EQH</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="120">CARRY</text>
+      <polyline fill="none" points="30,440 49,440" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="140">NEG</text>
+      <polyline fill="none" points="30,80 49,80" stroke="#000000"/>
+      <polyline fill="none" points="172,342 172,324 168,327 172,324 176,327" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="379">OPC PFL</text>
+      <polyline fill="none" points="30,60 49,60" stroke="#000000"/>
+      <polyline fill="none" points="30,220 49,220" stroke="#000000"/>
+      <polyline fill="none" points="271,160 290,160" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="100">INTM</text>
+      <polyline fill="none" points="30,360 49,360" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="280">INCPH N</text>
+      <polyline fill="none" points="271,80 290,80" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="120">ACT PC</text>
+      <ellipse cx="46" cy="340" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="459">OPC PFH</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="419">ACT ARG</text>
+      <polyline fill="none" points="271,60 290,60" stroke="#000000"/>
+      <polyline fill="none" points="30,400 49,400" stroke="#000000"/>
+      <polyline fill="none" points="271,120 290,120" stroke="#000000"/>
+      <polyline fill="none" points="30,240 49,240" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="200">S0</text>
+      <polyline fill="none" points="30,380 49,380" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="259">PFL CIn</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="60">EQU</text>
+      <polyline fill="none" points="271,280 290,280" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="180">INCPL</text>
+      <polyline fill="none" points="271,140 290,140" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="239">S2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="186" y="304">S</text>
+      <polyline fill="none" points="30,420 49,420" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="80">CNDX</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="359">OPC JMP</text>
+      <polyline fill="none" points="271,100 290,100" stroke="#000000"/>
+      <polyline fill="none" points="30,340 42,340" stroke="#000000"/>
+      <polyline fill="none" points="30,140 49,140" stroke="#000000"/>
+      <polyline fill="none" points="270,220 289,220" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="399">JMP SENSE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="299">INTX</text>
+      <polyline fill="none" points="30,120 49,120" stroke="#000000"/>
+      <polyline fill="none" points="162,310 181,310 178,307 182,310 178,313" stroke="#000000"/>
+      <ellipse cx="46" cy="300" fill="#ff0000" rx="3" ry="3" stroke="#000000"/>
+      <polyline fill="none" points="30,160 49,160" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="279">OPC INTESI</text>
+      <polyline fill="none" points="271,240 290,240" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="239">INCPH</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="220">INCPL N</text>
+      <polyline fill="none" points="30,480 49,480" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="60">ACT JMP</text>
+      <polyline fill="none" points="30,300 42,300" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="182" y="345">B</text>
+      <polyline fill="none" points="30,460 49,460" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="140">PC BRIDGE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="219">S1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="160">ACT INST</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="439">INC STAGE</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="200">INST BRIDGE</text>
+      <polyline fill="none" points="30,280 49,280" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="100">EQ</text>
+      <polyline fill="none" points="271,200 290,200" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="52" y="319">EQL</text>
+      <circ-anchor facing="east" x="290" y="50"/>
+      <circ-port dir="in" pin="170,440" x="30" y="380"/>
+      <circ-port dir="in" pin="170,480" x="30" y="440"/>
+      <circ-port dir="in" pin="170,520" x="30" y="460"/>
+      <circ-port dir="in" pin="270,140" x="30" y="60"/>
+      <circ-port dir="in" pin="270,160" x="30" y="80"/>
+      <circ-port dir="in" pin="270,180" x="30" y="100"/>
+      <circ-port dir="in" pin="270,200" x="30" y="120"/>
+      <circ-port dir="in" pin="270,220" x="30" y="140"/>
+      <circ-port dir="in" pin="270,240" x="30" y="160"/>
+      <circ-port dir="in" pin="270,300" x="30" y="200"/>
+      <circ-port dir="in" pin="270,320" x="30" y="220"/>
+      <circ-port dir="in" pin="270,340" x="30" y="240"/>
+      <circ-port dir="in" pin="270,380" x="30" y="360"/>
+      <circ-port dir="in" pin="700,440" x="30" y="400"/>
+      <circ-port dir="in" pin="700,470" x="30" y="420"/>
+      <circ-port dir="in" pin="700,520" x="30" y="480"/>
+      <circ-port dir="in" pin="750,160" x="30" y="300"/>
+      <circ-port dir="in" pin="750,180" x="30" y="280"/>
+      <circ-port dir="in" pin="750,240" x="30" y="320"/>
+      <circ-port dir="in" pin="750,260" x="30" y="340"/>
+      <circ-port dir="out" pin="410,430" x="290" y="180"/>
+      <circ-port dir="out" pin="410,460" x="290" y="220"/>
+      <circ-port dir="out" pin="410,490" x="290" y="240"/>
+      <circ-port dir="out" pin="410,520" x="290" y="280"/>
+      <circ-port dir="out" pin="450,140" x="290" y="60"/>
+      <circ-port dir="out" pin="870,170" x="290" y="80"/>
+      <circ-port dir="out" pin="870,250" x="290" y="100"/>
+      <circ-port dir="out" pin="960,340" x="290" y="120"/>
+      <circ-port dir="out" pin="960,370" x="290" y="140"/>
+      <circ-port dir="out" pin="960,410" x="290" y="160"/>
+      <circ-port dir="out" pin="960,450" x="290" y="200"/>
+      <circ-port dir="out" pin="960,510" x="290" y="260"/>
+    </appear>
+    <comp lib="0" loc="(170,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_PFL"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="INC_STAGE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_PFH"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,120)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(270,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="EQU"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CNDX"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="INTM"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CARRY"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="NEG"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ODD"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,260)" name="Ground">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(270,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S0"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S1"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S2"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(270,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_JMP"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(410,430)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INCPL"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(410,460)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INCPL_N"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(410,490)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INCPH"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(410,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INCPH_N"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(450,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_JMP"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="JMP_SENSE"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ACT_ARG"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(700,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ARG3"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(750,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="INTX"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(750,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OPC_INTSI"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(750,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="EQ_L"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(750,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="EQ_H"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(870,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="INT"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(870,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="EQ"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(960,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_PC"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(960,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_PC_BRIDGE"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(960,410)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INST"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(960,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ACT_INST_BRIDGE"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="0" loc="(960,510)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PFL_CIN"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="true"/>
+    </comp>
+    <comp lib="12" loc="(290,430)" name="IC_7408"/>
+    <comp lib="12" loc="(290,490)" name="IC_7408"/>
+    <comp lib="12" loc="(400,500)" name="IC_7400"/>
+    <comp lib="12" loc="(410,440)" name="IC_7400"/>
+    <comp lib="12" loc="(430,110)" name="IC_74151"/>
+    <comp lib="12" loc="(820,340)" name="IC_7400">
+      <a name="labelvisible" val="false"/>
+    </comp>
+    <comp lib="12" loc="(820,460)" name="IC_7400"/>
+    <comp lib="12" loc="(850,150)" name="IC_7400">
+      <a name="labelvisible" val="false"/>
+    </comp>
+    <comp lib="12" loc="(850,230)" name="IC_7408"/>
+    <comp lib="12" loc="(940,350)" name="IC_7408"/>
+    <comp lib="12" loc="(940,430)" name="IC_7400">
+      <a name="labelvisible" val="false"/>
+    </comp>
+    <comp lib="12" loc="(940,490)" name="IC_7400"/>
+    <wire from="(170,440)" to="(210,440)"/>
+    <wire from="(170,480)" to="(190,480)"/>
+    <wire from="(170,520)" to="(210,520)"/>
+    <wire from="(190,460)" to="(190,480)"/>
+    <wire from="(190,460)" to="(210,460)"/>
+    <wire from="(190,480)" to="(190,500)"/>
+    <wire from="(190,500)" to="(210,500)"/>
+    <wire from="(270,120)" to="(290,120)"/>
+    <wire from="(270,140)" to="(290,140)"/>
+    <wire from="(270,160)" to="(290,160)"/>
+    <wire from="(270,180)" to="(290,180)"/>
+    <wire from="(270,200)" to="(290,200)"/>
+    <wire from="(270,220)" to="(290,220)"/>
+    <wire from="(270,240)" to="(290,240)"/>
+    <wire from="(270,260)" to="(290,260)"/>
+    <wire from="(270,300)" to="(290,300)"/>
+    <wire from="(270,320)" to="(290,320)"/>
+    <wire from="(270,340)" to="(290,340)"/>
+    <wire from="(270,380)" to="(290,380)"/>
+    <wire from="(290,450)" to="(310,450)"/>
+    <wire from="(290,510)" to="(310,510)"/>
+    <wire from="(310,430)" to="(310,450)"/>
+    <wire from="(310,430)" to="(410,430)"/>
+    <wire from="(310,450)" to="(310,470)"/>
+    <wire from="(310,450)" to="(330,450)"/>
+    <wire from="(310,470)" to="(330,470)"/>
+    <wire from="(310,490)" to="(310,510)"/>
+    <wire from="(310,490)" to="(410,490)"/>
+    <wire from="(310,510)" to="(310,530)"/>
+    <wire from="(310,510)" to="(320,510)"/>
+    <wire from="(310,530)" to="(320,530)"/>
+    <wire from="(400,520)" to="(410,520)"/>
+    <wire from="(430,140)" to="(450,140)"/>
+    <wire from="(700,440)" to="(840,440)"/>
+    <wire from="(700,470)" to="(720,470)"/>
+    <wire from="(700,520)" to="(860,520)"/>
+    <wire from="(720,350)" to="(720,370)"/>
+    <wire from="(720,350)" to="(740,350)"/>
+    <wire from="(720,370)" to="(720,410)"/>
+    <wire from="(720,370)" to="(740,370)"/>
+    <wire from="(720,410)" to="(720,470)"/>
+    <wire from="(720,410)" to="(960,410)"/>
+    <wire from="(720,470)" to="(720,490)"/>
+    <wire from="(720,470)" to="(740,470)"/>
+    <wire from="(720,490)" to="(740,490)"/>
+    <wire from="(750,160)" to="(770,160)"/>
+    <wire from="(750,180)" to="(770,180)"/>
+    <wire from="(750,240)" to="(770,240)"/>
+    <wire from="(750,260)" to="(770,260)"/>
+    <wire from="(820,360)" to="(840,360)"/>
+    <wire from="(820,480)" to="(840,480)"/>
+    <wire from="(840,340)" to="(840,360)"/>
+    <wire from="(840,340)" to="(960,340)"/>
+    <wire from="(840,360)" to="(860,360)"/>
+    <wire from="(840,380)" to="(840,440)"/>
+    <wire from="(840,380)" to="(860,380)"/>
+    <wire from="(840,440)" to="(840,460)"/>
+    <wire from="(840,440)" to="(860,440)"/>
+    <wire from="(840,460)" to="(860,460)"/>
+    <wire from="(840,480)" to="(840,500)"/>
+    <wire from="(840,500)" to="(860,500)"/>
+    <wire from="(850,170)" to="(870,170)"/>
+    <wire from="(850,250)" to="(870,250)"/>
+    <wire from="(940,370)" to="(960,370)"/>
+    <wire from="(940,450)" to="(960,450)"/>
+    <wire from="(940,510)" to="(960,510)"/>
+  </circuit>
+</project>
