@@ -83,3 +83,4 @@ Jumping and conditions:
 	JMP Pointer to, Pointer from, Condition, Address
 	(Note that all arguments are optional, if not specified, it will load some AP into some AP that is defined by PS and it will jump without condition)
 
+TODO: remove store, define address notation
