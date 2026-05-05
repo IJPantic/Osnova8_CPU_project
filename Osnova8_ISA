@@ -1,0 +1,33 @@
+Temporary ISA because old one in documentation folder is not correct anymore
+
+OPC - OPCodes:
+	Opcode number (Hex)				Opcode								Opcode argument type
+	0	-	-	-	-	-	-	-	JMP (JuMP)	-	-	-	-	-	-	Condition
+	1	-	-	-	-	-	-	-	RC (Register C)	-	-	-	-	-	Bus
+	2	-	-	-	-	-	-	-	SF (Sector File)-	-	-	-	-	Bus
+	3	-	-	-	-	-	-	-	PFL (Pointer File Low)	-	-	-	Bus
+	4	-	-	-	-	-	-	-	PFH (Pointer File High)	-	-	-	Bus
+	5	-	-	-	-	-	-	-	RESR (REServe Register)	-	-	-	Bus
+	6	-	-	-	-	-	-	-	ADD (ADdress Device)	-	-	-	Bus
+	7	-	-	-	-	-	-	-	DVRR (Direct Value Register Reset)	None
+	8	-	-	-	-	-	-	-	DVRL (Direct Value Register Low)-	Value (One hex digit)
+	9	-	-	-	-	-	-	-	DVRH (Direct Value Register High)	Value (One hex digit)
+	A	-	-	-	-	-	-	-	RA (Register A)	-	-	-	-	-	Bus
+	B	-	-	-	-	-	-	-	RB (Register B)	-	-	-	-	-	Bus
+	C	-	-	-	-	-	-	-	PS (Pointer Selector)	-	-	-	Bus
+	D	-	-	-	-	-	-	-	INTSI (INTerrupt Set Internal)	-	None
+	E	-	-	-	-	-	-	-	INTSX (INTerrupt Set eXternal)	-	None
+	F	-	-	-	-	-	-	-	INTE (INTerrupt Enable)	-	-	-	None
+
+ARG - ARGument:
+	Argument number (Hex)			Bus argument						Condition argument
+	0	-	-	-	-	-	-	-	ALU	(Arithmetic Logic Unit)	-	-	NC (No Condition)
+	1	-	-	-	-	-	-	-	RC (Register C)	-	-	-	-	-	EQU (EQUl)
+	2	-	-	-	-	-	-	-	SFPS (Sector File Pointer Selector)	FLGXN (FLaG X Negated)
+	3	-	-	-	-	-	-	-	PFL (Pointer File Low)	-	-	-	INTMN (INTerrupt Mode Negated)
+	4	-	-	-	-	-	-	-	PFH (Pointer File High)	-	-	-	CARRY (CARRY)
+	5	-	-	-	-	-	-	-	RESR (REServe Register)	-	-	-	NEG (NEGative)
+	6	-	-	-	-	-	-	-	ADD (ADdress Device)	-	-	-	ODD (EVEN)
+	7	-	-	-	-	-	-	-	DVR (Direct Value Register)-	-	DONT (DON'T)
+
+(Note that binary low in 8's place in argument part of instruction increments pointer while "jmp" instruction is being executed
